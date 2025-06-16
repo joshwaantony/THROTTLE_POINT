@@ -9,36 +9,36 @@ function Trending() {
     {
       id: 1,
       name: "KTM RC 200",
-      image: "/bike.png",
+      image: "/rc200.png",
       price: "₹ 2,00,000",
       location: "On-Road Price, Washim",
     },
     {
       id: 2,
       name: "Yamaha R15 V4",
-      image: "/bike.png",
+      image: "/r15-v4.png",
       price: "₹ 1,82,000",
       location: "On-Road Price, Pune",
     },
     {
       id: 3,
       name: "Royal Enfield Classic 350",
-      image: "/bike.png",
+      image: "/350.png",
       price: "₹ 2,25,000",
       location: "On-Road Price, Mumbai",
     },
     {
       id: 4,
-      name: "Bajaj Pulsar N250",
-      image: "/bike.png",
-      price: "₹ 1,49,000",
+      name: "Bajaj Pulsar NS200",
+      image: "/NS200.png",
+      price: "₹ 2,49,000",
       location: "On-Road Price, Nagpur",
     },
     {
       id: 5,
-      name: "TVS Apache RTR 160",
-      image: "/bike.png",
-      price: "₹ 1,25,000",
+      name: "TVS Apache RR 310",
+      image: "/RR310.png",
+      price: "₹ 3,25,000",
       location: "On-Road Price, Nashik",
     },
   ];
@@ -70,11 +70,11 @@ function Trending() {
         {bikes.map((bike) => (
           <div
             key={bike.id}
-            className="border border-gray-300 rounded-2xl min-w-[350px] p-2 bg-gray-100"
+            className="border border-gray-300 rounded-2xl min-w-[350px]  p-2 bg-gray-100"
           >
             <img
               src={bike.image}
-              className="rounded-2xl w-full h-[200px] object-cover"
+              className=" drop-shadow-slate-950 rounded-2xl w-full h-[200px] object-cover"
               alt={bike.name}
             />
             <div className="flex flex-col gap-2 mt-2">
