@@ -2,10 +2,10 @@
 
 "use client"
 import React, { useState } from "react";
-import Trending from "./Trending";
-import Popular from "./Popular";
-import Electric from "./Electric";
-import Upcoming from "./Upcoming";
+import Trending from "../Section2/Trending";
+import Popular from "../Section2/Popular";
+import Electric from "../Section2/Electric";
+import Upcoming from "../Section2/Upcoming";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import Brand from "../Section4/Brand";
 import Budget from "../Section4/Budget";
@@ -51,7 +51,7 @@ function Section4() {
       </div>
 
       {/* Render selected tab component */}
-      <div className="pt-4">{renderComponent()}</div>
+      <div className="pt-4 ps-10">{renderComponent()}</div>
     </div>
   );
 }

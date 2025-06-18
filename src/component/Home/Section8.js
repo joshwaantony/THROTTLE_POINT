@@ -2,35 +2,36 @@
 
 "use client"
 import React, { useState } from "react";
-import Trending from "../Section2/Trending";
-import Popular from "../Section2/Popular";
-import Electric from "../Section2/Electric";
-
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import Upcoming from "../Section2/Upcoming";
-function Section2() {
+import Scooters from "../Section6/Scooters";
+import Bestbikes from "../Section6/Bestbikes";
+import Sports from "../Section6/Sports";
+import Cruiser from "../Section6/Cruiser";
+import News from "../Section8/News";
+import Extrareviews from "../Section8/Extrareviews";
+import Videos from "../Section8/Videos";
+function Section8() {
   const [activeTab, setActiveTab] = useState("TRENDING");
 
   const renderComponent = () => {
     switch (activeTab) {
-      case "TRENDING":
-        return <Trending />;
-      case "POPULAR":
-        return <Popular />;
-      case "ELECTRIC":
-        return <Electric />;
-      case "UPCOMING":
-        return <Upcoming />;
+      case "NEWS":
+        return <News/>;
+      case "EXPERT REVIEWS":
+        return <Extrareviews />;
+      case "VIDEOS":
+        return <Videos />;
+      
       default:
-        return <Trending />;
+        return <News />;
     }
   };
 
-  const tabs = ["TRENDING", "POPULAR", "ELECTRIC", "UPCOMING"];
+  const tabs = ["NEWS", "EXPERT REVIEWS", "VIDEOS", ];
 
   return (
-    <div >
-      <h1 className="text-black text-2xl font-semibold">Featured Bikes</h1>
+    <div className="pt-3" >
+      <h1 className="text-black text-2xl font-semibold">Latest Updates</h1>
 
       {/* Tab Headers */}
       <div className="text-black font-semibold text-[13px] flex gap-5 cursor-pointer pt-3">
@@ -49,9 +50,9 @@ function Section2() {
 
       {/* Render selected tab component */}
       <div className="pt-4">{renderComponent()}</div>
-      <button className="text-[#0979b6] font-semibold flex items-center mt-4">All Trending Bikes <MdOutlineKeyboardArrowRight className="text-2xl"/></button>
+      <button className="text-[#0979b6] font-semibold flex items-center mt-4">All News <MdOutlineKeyboardArrowRight className="text-2xl"/></button>
     </div>
   );
 }
 
-export default Section2;
+export default Section8;

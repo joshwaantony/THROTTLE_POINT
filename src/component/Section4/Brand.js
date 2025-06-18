@@ -15,8 +15,8 @@ function Brand() {
         ))} */}
         {BikeBrand.map((bike) => (
            <div key={bike.id} className="h-28 border border-gray-300 flex  flex-col justify-center items-center gap-2 ">
-          <img className="w-1/3 " src= {bike.logo} alt={`${bike.name} logo`} />
-          <span className="text-black">{bike.name}</span>
+          <img className="w-1/3 hover:scale-125 " src= {bike.logo} alt={`${bike.name} logo`} />
+          <span className="text-black  hover:text-green-700 cursor-pointer ">{bike.name}</span>
         </div>
         ))}
        

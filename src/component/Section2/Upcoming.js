@@ -3,14 +3,14 @@
 import React, { useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-function Electric() {
+function Upcoming() {
     const scrollRef = useRef(null);
     
       const bikes = [
         {
           id: 1,
           name: "KTM RC 200",
-          image: "/ride.jpg",
+          image: "/bike.png",
           price: "₹ 2,00,000",
           location: "On-Road Price, Washim",
         },
@@ -74,7 +74,7 @@ function Electric() {
             >
               <img
                 src={bike.image}
-                className="rounded-2xl w-full h-[200px] object-cover"
+                className="rounded-2xl w-full h-[200px] object-cover hover:scale-125"
                 alt={bike.name}
               />
               <div className="flex flex-col gap-2 mt-2">
@@ -101,4 +101,4 @@ function Electric() {
       </div>;
 }
 
-export default Electric;
+export default Upcoming;

@@ -74,7 +74,7 @@ function Popular() {
             >
               <img
                 src={bike.image}
-                className="rounded-2xl w-full h-[200px] object-cover"
+                className="rounded-2xl w-full h-[200px] object-cover hover:scale-125"
                 alt={bike.name}
               />
               <div className="flex flex-col gap-2 mt-2">

@@ -74,7 +74,7 @@ function Bestbikes () {
           >
             <img
               src={bike.image}
-              className=" drop-shadow-slate-950 rounded-2xl w-full h-[200px] object-cover"
+              className=" drop-shadow-slate-950 rounded-2xl w-full h-[200px] object-cover hover:scale-125"
               alt={bike.name}
             />
             <div className="flex flex-col gap-2 mt-2">

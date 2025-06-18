@@ -6,6 +6,7 @@ import Section3 from "@/component/Home/Section3";
 import Section5 from "@/component/Home/Section5";
 import Section6 from "@/component/Home/Section6";
 import Section7 from "@/component/Home/Section7";
+import Section8 from "@/component/Home/Section8";
 
 
 export default function home() {
@@ -24,6 +25,7 @@ export default function home() {
  <div className="px-40 py-4" >
  <Section6/>
 <Section7/>
+<Section8/>
  </div>
    </div>
    
