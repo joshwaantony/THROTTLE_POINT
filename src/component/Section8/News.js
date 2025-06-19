@@ -30,7 +30,7 @@ function News() {
         "The Honda Transalp XL750 gets updated styling, new features and a reworked suspension.",
     },
      {
-      id: 1,
+      id: 3,
       image: "r15-v4.png", // make sure this image exists in /public/news/
       title: "Honda Transalp XL750 Launched: Top 5 Highlights",
       author: " By Ajinkya Lad",
@@ -39,7 +39,7 @@ function News() {
         "Honda has launched the 2025 Transalp XL750 in India at a price of Rs. 11 lakh (ex-showroom).",
     },
     {
-      id: 2,
+      id: 4,
       image: "/RR310.png",
       title: "Honda Transalp XL750 Launched: Top 5 Highlights",
       author: " By Ajinkya Lad",

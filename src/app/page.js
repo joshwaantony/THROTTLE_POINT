@@ -7,12 +7,13 @@ import Section5 from "@/component/Home/Section5";
 import Section6 from "@/component/Home/Section6";
 import Section7 from "@/component/Home/Section7";
 import Section8 from "@/component/Home/Section8";
+import Footer from "@/component/Footer";
 
 
 export default function home() {
   return (
    <div>
-  <Navbar/>
+ 
   <Section1/>
  <div className="px-40 py-4" >
    
@@ -26,6 +27,7 @@ export default function home() {
  <Section6/>
 <Section7/>
 <Section8/>
+
  </div>
    </div>
    
