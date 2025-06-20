@@ -19,14 +19,14 @@ function Section2() {
         return <Popular />;
       case "ELECTRIC":
         return <Electric />;
-      case "UPCOMING":
+      case "ADVENTURE":
         return <Upcoming />;
       default:
         return <Trending />;
     }
   };
 
-  const tabs = ["TRENDING", "POPULAR", "ELECTRIC", "UPCOMING"];
+  const tabs = ["TRENDING", "POPULAR", "ELECTRIC", "ADVENTURE"];
 
   return (
     <div >
