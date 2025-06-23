@@ -26,6 +26,12 @@ const Login = () => {
             placeholder="Password"
             className="border  text-black  placeholder:text-black text-center border-gray-300 rounded-md p-2 outline-none focus:ring-2 focus:ring-green-500"
           />
+                 {/* Forgot Password Link */}
+          <div className="text-right text-sm">
+            <Link href="/forgetPassword" className="text-green-600 hover:underline">
+              Forgot Password?
+            </Link>
+          </div>
           <button
             type="submit"
             className="bg-black text-white py-2 rounded-md hover:bg-green-700 transition"
@@ -47,3 +53,5 @@ const Login = () => {
 };
 
 export default Login;
+
+
