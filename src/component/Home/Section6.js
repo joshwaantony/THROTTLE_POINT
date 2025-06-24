@@ -29,7 +29,7 @@ function Section6() {
 
   return (
     <div >
-      <h1 className="text-black text-2xl font-semibold">Trending Bikes of June 2025</h1>
+      <h1 className="text-black text-base sm:text-2xl font-semibold">Trending Bikes of June 2025</h1>
 
       {/* Tab Headers */}
       <div className="text-black font-semibold text-[13px] flex gap-5 cursor-pointer pt-3">
@@ -38,7 +38,7 @@ function Section6() {
             key={tab}
             onClick={() => setActiveTab(tab)}
             className={`transition-colors ${
-              activeTab === tab ? "text-green-700 border-b-2 border-green-700" : "text-gray-500"
+              activeTab === tab ? "text-[10px] sm:text-base text-green-700 border-b-2t border-green-700" : "text-gray-500 text-[10px] sm:text-base"
             }`}
           >
             {tab}

@@ -1,7 +1,7 @@
 import React from "react";
 
 function Budget() {
-  return <div className=" bg-gray-100 border border-gray-300 rounded-b-2xl grid grid-cols-5 py-8 ps-4 gap-x-4 gap-y-8  pe-14 text-center ">
+  return <div className=" bg-gray-100 border border-gray-300 rounded-b-2xl grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 py-8 ps-4 gap-x-4 gap-y-8  pe-14 text-center ">
  <div className="border border-gray-400 text-gray-500 text-[15px] text-center font-bold rounded-2xl  hover:text-green-700 cursor-pointer bg-white p-2">
   <p >Under ₹ 50,000</p>
  </div>

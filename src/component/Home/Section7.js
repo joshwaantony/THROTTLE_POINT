@@ -51,7 +51,7 @@ const compareData = [
   },
   {
     left: { brand: "Bajaj", model: "Pulsar NS200", price: "₹ 1,49,000", image: "/NS200.png" },
-    right: { brand: "TVS", model: "Apache RTR 200", price: "₹ 1,42,000", image: "/RR310.png" },
+    right: { brand: "TVS", model: "Apache RTR ", price: "₹ 1,42,000", image: "/RR310.png" },
     label: "NS200 Vs Apache 200"
   },
   {
@@ -92,7 +92,7 @@ const Section7 = () => {
 
   return (
     <div className="mt-3 px-4 relative">
-      <h1 className="text-black text-2xl font-semibold mb-4">Compare Bikes</h1>
+      <h1 className="text-black text-base sm:text-2xl font-semibold">Compare Bikes</h1>
 
       {/* Scroll buttons */}
       <button
@@ -117,30 +117,30 @@ const Section7 = () => {
         {compareData.map((item, index) => (
           <div
             key={index}
-            className="flex-shrink-0 border bg-white border-gray-300 rounded-2xl pt-4 w-[400px]"
+            className="flex-shrink-0 border bg-white border-gray-300 rounded-2xl pt-4 w-[250px] sm:w-[400px]"
           >
             <div className="flex">
               <div className="w-[200px] relative text-black">
                 <div className="border-r border-r-gray-300">
                   <img src={item.left.image} alt="" className="hover:scale-125" />
                 </div>
-                <h1 className="text-[12px] text-black px-4">{item.left.brand}</h1>
-                <p className="font-semibold text-[14px] px-4">{item.left.model}</p>
-                <p className="px-4 text-[12px] font-semibold">{item.left.price}</p>
-                <p className="text-gray-400 px-4 text-[14px]">Onwards</p>
-                <div className="absolute border border-black bg-white text-red-500 p-1 text-xs size-6 rounded-full -right-3 top-12">
+                <h1 className="text-[10px] sm:text-[12px] text-black px-4">{item.left.brand}</h1>
+                <p className="font-semibold text-[12px] sm:text-[14px] px-4">{item.left.model}</p>
+                <p className="px-4 text-[10px] sm:text-[12px] font-semibold">{item.left.price}</p>
+                <p className="text-gray-400 px-4 text-[12px] sm:text-[14px]">Onwards</p>
+                <div className="absolute border border-black bg-white text-red-500 p-1 text-[6px] sm:text-xs size-4 sm:size-6 rounded-full -right-2 sm:-right-3 top-6 sm:top-12 flex justify-center items-center">
                   VS
                 </div>
               </div>
               <div className="w-[200px] text-black">
                 <img src={item.right.image} alt="" className="hover:scale-125"  />
-                <h1 className="text-[12px] text-black px-4">{item.right.brand}</h1>
-                <p className="font-semibold text-[14px] px-4">{item.right.model}</p>
-                <p className="px-4 text-[12px] font-semibold">{item.right.price}</p>
-                <p className="text-gray-400 px-4 text-[14px]">Onwards</p>
+                <h1 className="text-[10px] sm:text-[12px] text-black px-4">{item.right.brand}</h1>
+                <p className="font-semibold text-[12px] sm:text-[14px] px-4">{item.right.model}</p>
+                <p className="px-4 text-[10px] sm:text-[12px] font-semibold">{item.right.price}</p>
+                <p className="text-gray-400 px-4 text-[12px] sm:text-[14px]">Onwards</p>
               </div>
             </div>
-            <button className="text-blue-500 border border-blue-400 rounded-xl p-2 font-semibold w-full mt-2">
+            <button className="text-xs sm:text-base  text-blue-500 border border-blue-400 rounded-xl p-1 sm:p-2 font-semibold w-full mt-2">
               {item.label}
             </button>
             

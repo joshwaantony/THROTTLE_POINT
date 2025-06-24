@@ -89,11 +89,11 @@ function Videos() {
         {bikes.map((bike) => (
           <div
             key={bike.id}
-            className="border border-gray-300 rounded-2xl min-w-[350px] p-3 bg-white shadow-sm"
+            className="border border-gray-300 rounded-2xl min-w-[250px] sm:min-w-[300px] xl:min-w-[350px]  p-2 bg-gray-100"
           >
             {/* ✅ Embedded YouTube iframe */}
             <iframe
-              className="rounded-2xl w-full h-[200px]"
+              className="rounded-2xl w-full h-[150px] sm:h-[200px]"
               src={bike.videoUrl}
               title={bike.title}
               frameBorder="0"
@@ -102,22 +102,22 @@ function Videos() {
             ></iframe>
 
             <div className="flex flex-col gap-2 mt-3">
-              <h1 className="text-black font-semibold text-lg h-16">{bike.title}</h1>
+              <h1 className="text-black font-semibold text-[15px] sm:text-xl">{bike.title}</h1>
               <div className="flex justify-between text-sm text-gray-500 border-b border-gray-100">
                 <p>
                   <span className="text-black font-medium">{bike.author}</span>
                 </p>
                 <p>{bike.time}</p>
               </div>
-              <p className="text-gray-600 text-sm">{bike.description}</p>
+              <p className="text-gray-600 text-[12px] sm:text-sm">{bike.description}</p>
               <div className="flex justify-between items-center mt-2">
                 <div className="flex gap-2 text-black items-center">
-                  <MdOutlineRemoveRedEye />
-                  <span>196 views</span>
+                  <MdOutlineRemoveRedEye className="text-xs sm:text-base" />
+                  <span className="text-xs sm:text-base">196 views</span>
                 </div>
                 <div className="flex gap-2 text-black items-center">
-                  <GrLike />
-                  <span>196 Likes</span>
+                  <GrLike className="text-xs sm:text-base" />
+                  <span className="text-xs sm:text-base">196 Likes</span>
                 </div>
               </div>
             </div>

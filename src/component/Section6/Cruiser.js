@@ -70,15 +70,15 @@ function Cruiser() {
         {bikes.map((bike) => (
           <div
             key={bike.id}
-            className="border border-gray-300 rounded-2xl min-w-[350px]  p-2 bg-gray-100"
+            className="border border-gray-300 rounded-2xl min-w-[250px] sm:min-w-[300px] xl:min-w-[350px]  p-2 bg-gray-100"
           >
             <img
               src={bike.image}
-              className=" drop-shadow-slate-950 rounded-2xl w-full h-[200px] object-cover hover:scale-125"
+              className="  drop-shadow-slate-950 rounded-2xl w-full h-[150px] sm:h-[200px] object-cover hover:scale-125"
               alt={bike.name}
             />
             <div className="flex flex-col gap-2 mt-2">
-              <h1 className="text-black font-semibold text-xl">{bike.name}</h1>
+              <h1 className="text-black font-semibold text-lg sm:text-xl">{bike.name}</h1>
               <p className="text-gray-400">
                 <span className="font-bold text-black">{bike.price}</span> Onwards
               </p>

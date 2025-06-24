@@ -56,7 +56,7 @@ function Section3() {
     
   return <div className="mt-10">
     <div>
-        <h1 className="text-black text-2xl font-semibold">Get Offers on Popular Bike</h1>
+        <h1 className="text-black text-base md:text-2xl font-semibold">Get Offers on Popular Bike</h1>
     </div>
     <div className="relative mt-3">
             {/* Left Arrow */}

@@ -12,15 +12,15 @@ function Page() {
   return <div>
  
   <Section1/>
- <div className="px-40 py-4" >
-   
+ <div className="px-8 md:px-20 2xl:px-40 py-4" >
+  
   <Section2/>
   <Section3/>
-  <Section4/>
+  <Section4/> 
   
  </div>
  <Section5/>
-  <div className="px-40 py-4" >
+  <div className="px-8 md:px-20 2xl:px-40 py-4" >
  <Section6/>
 <Section7/>
 <Section8/>

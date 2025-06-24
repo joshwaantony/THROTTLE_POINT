@@ -33,7 +33,7 @@ function Section4() {
 
   return (
     <div >
-      <h1 className="text-black text-2xl font-semibold">Browse Bikes By</h1>
+      <h1 className="text-black text-base md:text-2xl font-semibold">Browse Bikes By</h1>
 
       {/* Tab Headers */}
       <div className="text-black font-semibold text-[13px] flex gap-5 cursor-pointer pt-3">
@@ -42,7 +42,7 @@ function Section4() {
             key={tab}
             onClick={() => setActiveTab(tab)}
             className={`transition-colors ${
-              activeTab === tab ? "text-green-700 border-b-2 border-green-700" : "text-gray-500"
+              activeTab === tab ? "text-[10px] sm:text-base text-green-700 border-b-2t border-green-700" : "text-gray-500 text-[10px] sm:text-base"
             }`}
           >
             {tab}
@@ -51,7 +51,7 @@ function Section4() {
       </div>
 
       {/* Render selected tab component */}
-      <div className="pt-4 ps-10">{renderComponent()}</div>
+      <div className="pt-4 sm:ps-10">{renderComponent()}</div>
     </div>
   );
 }

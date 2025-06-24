@@ -97,7 +97,10 @@ function Section1() {
   return (
     <div className="relative">
       {/* Banner background */}
-      <div className="banner1">
+     <div className=" bg-[url('/ride12.png')] md:bg-[url('/ride.jpg')] bg-no-repeat bg-fixed bg-cover bg-[center_85px]">
+  {/* content here */}
+
+
         <div className="flex flex-col justify-center items-center h-[550px] bg-[#0d0d0d32] text-white gap-4 px-4 text-center">
           
           <h1 className="font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-24 max-w-[90%]">

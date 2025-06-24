@@ -77,22 +77,22 @@ function News() {
         {bikes.map((bike) => (
           <div
             key={bike.id}
-            className="border border-gray-300 rounded-2xl min-w-[350px] p-3 bg-white shadow-sm"
+            className="border border-gray-300 rounded-2xl min-w-[250px] sm:min-w-[300px] xl:min-w-[350px]  p-2 bg-gray-100"
           >
             <img
               src={bike.image}
-              className="rounded-2xl w-full h-[200px] object-cover hover:scale-105 transition-transform duration-300"
+              className=" drop-shadow-slate-950 rounded-2xl w-full h-[150px] sm:h-[200px] object-cover hover:scale-125"
               alt={bike.title}
             />
             <div className="flex flex-col gap-2 mt-3">
-              <h1 className="text-black font-semibold text-lg">{bike.title}</h1>
+              <h1 className="text-black font-semibold text-[15px] sm:text-xl">{bike.title}</h1>
               <div className="flex justify-between text-sm text-gray-500">
                 <p>
-                  <span className="text-black font-medium">{bike.author}</span>
+                  <span className="text-black  font-medium">{bike.author}</span>
                 </p>
                 <p>{bike.time}</p>
               </div>
-              <p className="text-gray-600 text-sm">{bike.description}</p>
+              <p className="text-gray-600 text-[12px] sm:text-sm">{bike.description}</p>
               <div className="flex justify-end">
                 <button className="text-blue-600 font-semibold text-sm hover:underline">
                   Read More
