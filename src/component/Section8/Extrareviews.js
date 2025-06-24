@@ -193,7 +193,7 @@ function Extrareviews() {
               alt={bike.title}
             />
             <div className="flex flex-col gap-2 mt-3">
-              <h1 className="text-black font-semibold text-[15px] sm:text-xl">{bike.title}</h1>
+              <h1 className="text-black font-semibold text-[15px] sm:text-xl.  ">{bike.title}</h1>
               <div className="flex justify-between text-sm text-gray-500">
                 <p>
                   <span className="text-black font-medium">{bike.author}</span>

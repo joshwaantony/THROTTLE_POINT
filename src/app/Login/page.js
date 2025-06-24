@@ -11,8 +11,8 @@ const Login = () => {
       className="flex items-center justify-center min-h-screen bg-cover bg-center bg-fixed px-4 "
       style={{ backgroundImage: "url('/login.jpg')" }}
     >
-      <div className="bg-[#ffffffa4] shadow-md rounded-lg p-6 w-full max-w-md bg-opacity-90">
-        <h2 className="text-2xl font-bold text-center text-black mb-6">
+      <div className="bg-[#ffffffa4] shadow-md rounded-lg p-2 md:p-6 w-full max-w-md bg-opacity-90">
+        <h2 className="text-xl md:text-2xl font-bold text-center text-black mb-6">
           Login to Your Account
         </h2>
         <form className="flex flex-col gap-4">
