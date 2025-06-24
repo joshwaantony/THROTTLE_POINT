@@ -102,9 +102,9 @@ function Navbar() {
         </div>
 
         {/* Right Section */}
-        <div className="relative flex items-center gap-3 mt-2 md:mt-0 flex-wrap sm:flex-nowrap">
+        <div className="relative flex items-center gap-3 mt-2 md:mt-0 ">
           {/* Search */}
-          <div className="flex items-center border border-black rounded-2xl px-4 py-1 sm:px-6 sm:py-2">
+          <div className="flex items-center border border-black rounded-2xl px-2 py-1 sm:px-6 sm:py-2">
             <input
               type="search"
               placeholder="Search"
