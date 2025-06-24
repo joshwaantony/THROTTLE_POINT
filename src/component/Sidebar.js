@@ -37,7 +37,7 @@ const Sidebar = ({ onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-40 flex pt-36 sm:pt-20">
+    <div className="fixed inset-0 z-40 flex pt-[100px] sm:pt-20">
       {/* Overlay */}
       <div className="fixed inset-0 bg-gray-800/50 backdrop-blur-sm" />
 
