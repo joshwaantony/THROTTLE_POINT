@@ -1,18 +1,9 @@
-
-
-
-
-
 import React, { useEffect, useRef, useState } from "react";
 import { IoHomeOutline } from "react-icons/io5";
 import { RiMotorbikeLine } from "react-icons/ri";
 import { GiScooter, GiElectric, GiWallet } from "react-icons/gi";
 import { GrCompare } from "react-icons/gr";
-import {
-  MdBikeScooter,
-  MdOutlineSell,
-  MdOutlineReviews,
-} from "react-icons/md";
+import { MdBikeScooter, MdOutlineSell, MdOutlineReviews } from "react-icons/md";
 import { TbNews } from "react-icons/tb";
 import { SlCalculator } from "react-icons/sl";
 import { CgProfile } from "react-icons/cg";
@@ -37,8 +28,7 @@ const Sidebar = ({ onClose }) => {
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
-    return () =>
-      document.removeEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   const closeWithAnimation = () => {
@@ -82,7 +72,11 @@ const Sidebar = ({ onClose }) => {
             title="New Scooters"
             isOpen={expandedItem === "NewScooters"}
             toggle={() => toggleItem("NewScooters")}
-            options={["Find New Scooters", "Upcoming Scooters", "Best Scooters"]}
+            options={[
+              "Find New Scooters",
+              "Upcoming Scooters",
+              "Best Scooters",
+            ]}
           />
 
           <NavItem icon={<GiElectric />} text="Electric Bikes" />

@@ -1,6 +1,4 @@
-
-
-"use client"
+"use client";
 import React, { useState } from "react";
 import Trending from "../Section2/Trending";
 import Popular from "../Section2/Popular";
@@ -29,8 +27,10 @@ function Section2() {
   const tabs = ["TRENDING", "POPULAR", "ELECTRIC", "ADVENTURE"];
 
   return (
-    <div >
-      <h1 className="text-black text-base sm:text-2xl font-semibold">Featured Bikes</h1>
+    <div>
+      <h1 className="text-black text-base sm:text-2xl font-semibold">
+        Featured Bikes
+      </h1>
 
       {/* Tab Headers */}
       <div className="text-black font-semibold text-[13px] flex gap-5 cursor-pointer pt-3">
@@ -39,7 +39,9 @@ function Section2() {
             key={tab}
             onClick={() => setActiveTab(tab)}
             className={`transition-colors  ${
-              activeTab === tab ? " text-[10px] sm:text-base text-green-700 border-b-2t border-green-700" : "text-gray-500 text-[10px] sm:text-base"
+              activeTab === tab
+                ? " text-[10px] sm:text-base text-green-700 border-b-2t border-green-700"
+                : "text-gray-500 text-[10px] sm:text-base"
             }`}
           >
             {tab}
@@ -49,7 +51,9 @@ function Section2() {
 
       {/* Render selected tab component */}
       <div className="pt-4">{renderComponent()}</div>
-      <button className="text-[#0979b6] font-semibold flex items-center mt-4">All Trending Bikes <MdOutlineKeyboardArrowRight className="text-2xl"/></button>
+      <button className="text-[#0979b6] font-semibold flex items-center mt-4">
+        All Trending Bikes <MdOutlineKeyboardArrowRight className="text-2xl" />
+      </button>
     </div>
   );
 }
