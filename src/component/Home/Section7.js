@@ -45,7 +45,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const compareData = [
   {
-    left: { brand: "Royal Enfield", model: "Hunter 350", price: "₹ 1,80,460", image: "/rc200.png" },
+    left: { brand: "Royal Enfield", model: "Hunter 350", price: "₹ 1,80,460", image: "/_hunter.png" },
     right: { brand: "Yamaha", model: "R15 V4", price: "₹ 1,80,000", image: "/r15-v4.png" },
     label: "Hunter 350 Vs R15 V4"
   },
@@ -55,28 +55,28 @@ const compareData = [
     label: "NS200 Vs Apache 200"
   },
   {
-    left: { brand: "Royal Enfield", model: "Classic 350", price: "₹ 1,93,000", image: "/rc200.png" },
-    right: { brand: "Honda", model: "CB350", price: "₹ 2,00,000", image: "/rc200.png" },
+    left: { brand: "Royal Enfield", model: "Classic 350", price: "₹ 1,93,000", image: "/350.png" },
+    right: { brand: "Honda", model: "CB350", price: "₹ 2,00,000", image: "/CB350.png" },
     label: "Classic 350 Vs CB350"
   },
   {
-    left: { brand: "KTM", model: "Duke 200", price: "₹ 1,96,000", image: "/rc200.png" },
-    right: { brand: "Yamaha", model: "MT-15", price: "₹ 1,68,000", image: "/rc200.png" },
+    left: { brand: "KTM", model: "Duke 200", price: "₹ 1,96,000", image: "/duke-200.png" },
+    right: { brand: "Yamaha", model: "MT-15", price: "₹ 1,68,000", image: "/mt15.png" },
     label: "Duke 200 Vs MT-15"
   },
   {
-    left: { brand: "Suzuki", model: "Gixxer SF", price: "₹ 1,35,000", image: "/rc200.png" },
-    right: { brand: "Yamaha", model: "FZ-S FI", price: "₹ 1,30,000", image: "/rc200.png" },
+    left: { brand: "Suzuki", model: "Gixxer SF", price: "₹ 1,35,000", image: "/Suzuki-Gixxer-SF-250.png" },
+    right: { brand: "Yamaha", model: "FZ-S FI", price: "₹ 1,30,000", image: "/FZ-S-FI.png" },
     label: "Gixxer SF Vs FZ-S"
   },
   {
-    left: { brand: "Hero", model: "Xtreme 160R", price: "₹ 1,27,000", image: "/rc200.png" },
-    right: { brand: "Honda", model: "Hornet 2.0", price: "₹ 1,36,000", image: "/rc200.png" },
+    left: { brand: "Hero", model: "Xtreme 160R", price: "₹ 1,27,000", image: "/Xtreme-160R.png" },
+    right: { brand: "Honda", model: "Hornet 2.0", price: "₹ 1,36,000", image: "/Hornet-2.0.png" },
     label: "Xtreme 160R Vs Hornet 2.0"
   },
   {
-    left: { brand: "TVS", model: "Raider 125", price: "₹ 93,000", image: "/rc200.png" },
-    right: { brand: "Honda", model: "SP125", price: "₹ 87,000", image: "/rc200.png" },
+    left: { brand: "TVS", model: "Raider 125", price: "₹ 93,000", image: "/rider.png" },
+    right: { brand: "Honda", model: "SP125", price: "₹ 87,000", image: "/SP125.png" },
     label: "Raider 125 Vs SP125"
   }
 ];

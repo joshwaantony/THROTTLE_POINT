@@ -22,16 +22,16 @@ function Sports() {
     },
     {
       id: 3,
-      name: "Royal Enfield Classic 350",
-      image: "/350.png",
-      price: "₹ 2,25,000",
+      name: "Suzuki Gixxer SF 250",
+      image: "/Suzuki-Gixxer-SF-250.png",
+      price: "₹ 2,45,436",
       location: "On-Road Price, Mumbai",
     },
     {
       id: 4,
-      name: "Bajaj Pulsar NS200",
-      image: "/NS200.png",
-      price: "₹ 2,49,000",
+      name: "Honda CBR250R",
+      image: "/_CBR-250.png",
+      price: "₹ 1,95,035",
       location: "On-Road Price, Nagpur",
     },
     {

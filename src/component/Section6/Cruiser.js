@@ -8,16 +8,16 @@ function Cruiser() {
   const bikes = [
     {
       id: 1,
-      name: "KTM RC 200",
-      image: "/rc200.png",
-      price: "₹ 2,00,000",
+      name: "Royal Enfield Hunter 350",
+      image: "/_hunter.png",
+      price: "₹ 1,80,460",
       location: "On-Road Price, Washim",
     },
     {
       id: 2,
-      name: "Yamaha R15 V4",
-      image: "/r15-v4.png",
-      price: "₹ 1,82,000",
+      name: "Royal Enfield Meteor 350",
+      image: "/Royal-Enfield-Meteor-350.png",
+      price: "₹ 2,46,986",
       location: "On-Road Price, Pune",
     },
     {
@@ -29,16 +29,16 @@ function Cruiser() {
     },
     {
       id: 4,
-      name: "Bajaj Pulsar NS200",
-      image: "/NS200.png",
-      price: "₹ 2,49,000",
+      name: "Royal Enfield Guerrilla 450",
+      image: "/Royal-Enfield-Guerrilla-450.png",
+      price: "₹  2,39,000",
       location: "On-Road Price, Nagpur",
     },
     {
       id: 5,
-      name: "TVS Apache RR 310",
-      image: "/RR310.png",
-      price: "₹ 3,25,000",
+      name: "TVS Ronin",
+      image: "/TVS-Ronin.png",
+      price: "₹ 1,66,537",
       location: "On-Road Price, Nashik",
     },
   ];
