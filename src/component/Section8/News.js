@@ -12,41 +12,41 @@ function News() {
   // Define the bikes/news data
   const bikes = [
     {
-      id: 1,
-      image: "/rc200.png", // make sure this image exists in /public/news/
-      title: "Honda Transalp XL750 Launched: Top 5 Highlights",
-      author: " By Ajinkya Lad",
-      time: "17 hours ago",
-      description:
-        "Honda has launched the 2025 Transalp XL750 in India at a price of Rs. 11 lakh (ex-showroom).",
-    },
-    {
-      id: 2,
-      image: "/NS200.png",
-      title: "Honda Transalp XL750 Launched: Top 5 Highlights",
-      author: " By Ajinkya Lad",
-      time: "17 hours ago",
-      description:
-        "The Honda Transalp XL750 gets updated styling, new features and a reworked suspension.",
-    },
-     {
-      id: 3,
-      image: "r15-v4.png", // make sure this image exists in /public/news/
-      title: "Honda Transalp XL750 Launched: Top 5 Highlights",
-      author: " By Ajinkya Lad",
-      time: "17 hours ago",
-      description:
-        "Honda has launched the 2025 Transalp XL750 in India at a price of Rs. 11 lakh (ex-showroom).",
-    },
-    {
-      id: 4,
-      image: "/RR310.png",
-      title: "Honda Transalp XL750 Launched: Top 5 Highlights",
-      author: " By Ajinkya Lad",
-      time: "17 hours ago",
-      description:
-        "The Honda Transalp XL750 gets updated styling, new features and a reworked suspension.",
-    },
+    id: 1,
+    image: "/rc200.png",
+    title: "KTM RC 200 New Gen Launch: What's New?",
+    author: "By Rohan Mehta",
+    time: "3 hours ago",
+    description:
+      "KTM has launched the latest RC 200 with upgraded design, enhanced aerodynamics, and new features for 2025.",
+  },
+  {
+    id: 2,
+    image: "/NS200.png",
+    title: "Bajaj NS200 2025 Edition Revealed",
+    author: "By Sneha Kapoor",
+    time: "6 hours ago",
+    description:
+      "The NS200 now comes with LED lighting, dual-channel ABS, and updated color variants to compete in the 200cc segment.",
+  },
+  {
+    id: 3,
+    image: "r15-v4.png",
+    title: "Yamaha R15 V4 Updated With Smart Features",
+    author: "By Manav Desai",
+    time: "9 hours ago",
+    description:
+      "Yamaha brings in smartphone connectivity, traction control, and a quick shifter in the latest R15 V4 lineup.",
+  },
+  {
+    id: 4,
+    image: "/RR310.png",
+    title: "TVS Apache RR310 Race Kit Now Available",
+    author: "By Ananya Iyer",
+    time: "1 day ago",
+    description:
+      "TVS launches the Race Kit for RR310, offering adjustable suspension and new color schemes for track lovers.",
+  },
     // Add more articles as needed
   ];
 
