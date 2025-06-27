@@ -13,7 +13,7 @@ function News() {
   const bikes = [
     {
     id: 1,
-    image: "/rc200.png",
+    image: "rc200.png",
     title: "KTM RC 200 New Gen Launch: What's New?",
     author: "By Rohan Mehta",
     time: "3 hours ago",
@@ -22,7 +22,7 @@ function News() {
   },
   {
     id: 2,
-    image: "/NS200.png",
+    image: "NS200.png",
     title: "Bajaj NS200 2025 Edition Revealed",
     author: "By Sneha Kapoor",
     time: "6 hours ago",
@@ -40,7 +40,7 @@ function News() {
   },
   {
     id: 4,
-    image: "/RR310.png",
+    image: "RR310.png",
     title: "TVS Apache RR310 Race Kit Now Available",
     author: "By Ananya Iyer",
     time: "1 day ago",
@@ -80,7 +80,7 @@ function News() {
             className="border border-gray-300 rounded-2xl min-w-[250px] sm:min-w-[300px] xl:min-w-[350px]  p-2 bg-gray-100"
           >
             <img
-              src={bike.image}
+              src={`/${bike?.image}`}
               className=" drop-shadow-slate-950 rounded-2xl w-full h-[150px] sm:h-[200px] object-cover hover:scale-125"
               alt={bike.title}
             />
