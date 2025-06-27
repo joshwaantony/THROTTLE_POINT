@@ -32,7 +32,7 @@ function Section4() {
   const tabs = ["BRAND", "BUDGET", "DISPLACEMENT", "BODYSTYLE"];
 
   return (
-    <div >
+    <div className="">
       <h1 className="text-black text-base md:text-2xl font-semibold">Browse Bikes By</h1>
 
       {/* Tab Headers */}

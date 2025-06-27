@@ -55,7 +55,7 @@ const Section7 = () => {
   };
 
   return (
-    <div className="mt-3 px-4 relative">
+    <div className="mt-3 px-4 relative ">
       <h1 className="text-black text-base sm:text-2xl font-semibold">Compare Bikes</h1>
 
       {/* Scroll buttons */}
@@ -79,11 +79,12 @@ const Section7 = () => {
         className="flex overflow-x-auto gap-4 pb-4 scroll-smooth scrollbar-hide px-10"
       >
         {compareData.map((item, index) => (
-          <div
+         <div className="mt-5">
+           <div
             key={index}
-            className="flex-shrink-0 border bg-white border-gray-300 rounded-2xl pt-4 w-[250px] sm:w-[400px]"
+            className="flex-shrink-0 border bg-white border-gray-300 rounded-2xl  w-[250px] sm:w-[400px] "
           >
-            <div className="flex">
+            <div className="flex mb-">
               <div className="w-[200px] relative text-black">
                 <div className="border-r border-r-gray-300">
                   <img src={item.left.image} alt="" className="hover:scale-125" />
@@ -109,6 +110,7 @@ const Section7 = () => {
             </button>
             
           </div>
+         </div>
           
         ))}
       </div>

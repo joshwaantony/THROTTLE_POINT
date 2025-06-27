@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react";
 
 import { BikeBrand } from "./BikeBrand";
@@ -15,7 +16,7 @@ function Brand() {
         ))} */}
         {BikeBrand.map((bike) => (
            <div key={bike.id} className="h-28 border border-gray-300 flex  flex-col justify-center items-center gap-2 ">
-          <img className="w-1/3 hover:scale-125 " src= {bike.logo} alt={`${bike.name} logo`} />
+          <img className="w-1/3 hover:scale-125 " src={`/${bike?.logo}`} alt={`${bike.name} logo`} />
           <span className="text-black text-sm sm:text-base  hover:text-green-700 cursor-pointer ">{bike.name}</span>
         </div>
         ))}

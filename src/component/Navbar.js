@@ -85,7 +85,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex w-full fixed z-50 justify-between bg-white items-center px-4 sm:px-6 md:px-8 py-2 border-b-2 flex-wrap">
+      <div className="flex w-full sticky top-0 z-50 justify-between bg-white items-center px-4 sm:px-6 md:px-8 py-2 border-b-2 flex-wrap">
         {/* Left Section */}
         <div className="flex items-center gap-2">
           <button onClick={() => setIsSidebarOpen(true)}>

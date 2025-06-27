@@ -2,7 +2,7 @@ import Footer from "@/component/Footer";
 import Navbar from "@/component/Navbar";
 import React from "react";
 
-function layout({children}) {
+function HomeLayout({children}) {
   return <div>
     <Navbar/>
     {children}
@@ -10,4 +10,4 @@ function layout({children}) {
   </div>;
 }
 
-export default layout;
+export default HomeLayout ;
