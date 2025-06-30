@@ -4,6 +4,9 @@ import React, { useState } from "react";
 
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import Bike from "./Bike";
+import Scooters from "./Scooters";
+import Cruisers from "./Cruisers";
+import Sports from "./Sports";
 
 
 
@@ -15,17 +18,17 @@ function Section1() {
       case "BIKES":
         return <Bike/>
       case "POPULAR":
-        return <Popular />;
+        return <Scooters/>;
       case "ELECTRIC":
-        return <Electric />;
+        return <Cruisers />;
       case "ADVENTURE":
-        return <Upcoming />;
+        return <Sports/>;
       default:
         return < Bike/>;
     }
   };
 
-  const tabs = ["BIKES", "POPULAR", "ELECTRIC", "ADVENTURE"];
+  const tabs = ["BIKES", "SCOOTERS", "CRUISERS", "SPORTS"];
 
   return (
     <div>

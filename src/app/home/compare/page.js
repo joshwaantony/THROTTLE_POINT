@@ -15,20 +15,20 @@ function page() {
               <div className="w-full text-black flex justify-center items-center flex-col border-1 rounded-l-2xl border-gray-200 relative  ">
                 <img src="/selectbike.svg" className="size-18" alt=""  />
                 <h1 className="text-[15px] text-[#0979B6] px-4">Select Bike</h1>
-                <div className=" size-6 -right-3  border-1 rounded-full border-[#002B51] text-[#E03013] bg-white text-xs flex justify-center items-center absolute">VS</div>
+                <div className=" size-6 -right-3  border-1 rounded-full border-[#002B51] text-[#E03013] bg-white z-50 text-xs flex justify-center items-center absolute">VS</div>
                 
               </div>
                <div className="w-full text-black flex justify-center items-center flex-col border-1  border-gray-200 relative ">
                 <img src="/selectbike.svg" className="size-18" alt=""  />
                 <h1 className="text-[15px] text-[#0979B6] px-4">Select Bike</h1>
-                                <div className=" size-6 -right-3  border-1 rounded-full border-[#002B51] text-[#E03013] bg-white text-xs flex justify-center items-center absolute">VS</div>
+                                <div className=" size-6 -right-3  border-1 rounded-full border-[#002B51] text-[#E03013] bg-white z-50 text-xs flex justify-center items-center absolute">VS</div>
 
                 
               </div>
                   <div className="w-full text-black flex justify-center items-center flex-col border-1  border-gray-200 relative  ">
                 <img src="/selectbike.svg" className="size-18" alt=""  />
                 <h1 className="text-[15px] text-[#0979B6] px-4">Select Bike</h1>
-                                <div className=" size-6 -right-3  border-1 rounded-full border-[#002B51] text-[#E03013] bg-white text-xs flex justify-center items-center absolute">VS</div>
+                                <div className=" size-6 -right-3  border-1 rounded-full border-[#002B51] text-[#E03013] bg-white z-50 text-xs flex justify-center items-center absolute">VS</div>
 
                 
               </div>
@@ -40,7 +40,7 @@ function page() {
               
             </div>
 
-            <button className="bg-[#E03013] w-[315px] h-[48px] font-bold rounded-lg mb-10 ">Compare</button>
+            <button className="bg-[#E03013] w-[315px] h-[48px] font-bold rounded-lg mb-10 text-white">Compare</button>
             <Comparebike/>
    
    

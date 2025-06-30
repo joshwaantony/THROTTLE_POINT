@@ -4,7 +4,7 @@
     import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
     import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
-function Bike() {
+function Cruisers() {
 
     
     
@@ -80,10 +80,9 @@ function Bike() {
           className="flex overflow-x-auto gap-4  pb-4 scroll-smooth scrollbar-hide pe-10 px-1"
         >
           {compareData.map((item, index) => (
-           <div className="mt-5"  key={index}>
-
+           <div className="mt-5">
              <div
-             
+              key={index}
               className="flex-shrink-0 border justify-between bg-white border-gray-300 rounded-2xl  w-[250px] sm:w-[400px] "
             >
               <div className="flex mb-">
@@ -120,4 +119,4 @@ function Bike() {
       </div>
 }
 
-export default Bike;
+export default Cruisers;
