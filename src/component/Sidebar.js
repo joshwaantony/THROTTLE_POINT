@@ -72,7 +72,7 @@ const Sidebar = ({ onClose }) => {
             itemKey="NewBikes"
             isOpen={expandedItem === "NewBikes"}
             toggle={() => toggleItem("NewBikes")}
-            options={["Find New Bikes", "Upcoming Bikes", "Popular Bikes","Check On-Road Price"]}
+            options={["Find New Bikes", "Upcoming Bikes", "Locate Showrooms","Check On-Road Price"]}
           />
 
           <ExpandableNavItem
@@ -146,6 +146,12 @@ const ExpandableNavItem = ({ icon, title, itemKey, isOpen, toggle, options }) =>
     }
     if (option === "Check On-Road Price"){
       router.push("/home/OnroadPrice")
+    }
+     if (option === "Upcoming Bikes"){
+      router.push("/home/Upcoming")
+    }
+     if (option === "Locate Showrooms"){
+      router.push("/home/Showrooms")
     }
     // Add more routes if needed
   };
