@@ -1,4 +1,185 @@
 
+// "use client";
+
+// import React, { useEffect, useRef, useState } from "react";
+// import { useRouter } from "next/navigation";
+
+// import { IoHomeOutline } from "react-icons/io5";
+// import { RiMotorbikeLine } from "react-icons/ri";
+// import { GiScooter, GiElectric, GiWallet } from "react-icons/gi";
+// import { GrCompare } from "react-icons/gr";
+// import { MdBikeScooter, MdOutlineSell, MdOutlineReviews } from "react-icons/md";
+// import { TbNews } from "react-icons/tb";
+// import { SlCalculator } from "react-icons/sl";
+// import { CgProfile } from "react-icons/cg";
+// import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
+
+// const Sidebar = ({ onClose }) => {
+//   const sidebarRef = useRef();
+//   const [expandedItem, setExpandedItem] = useState(null);
+//   const [visible, setVisible] = useState(false);
+
+//   const toggleItem = (itemName) => {
+//     setExpandedItem(expandedItem === itemName ? null : itemName);
+//   };
+
+//   useEffect(() => {
+//     setTimeout(() => setVisible(true), 10);
+
+//     const handleClickOutside = (event) => {
+//       if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+//         closeWithAnimation();
+//       }
+//     };
+//     document.addEventListener("mousedown", handleClickOutside);
+//     return () => document.removeEventListener("mousedown", handleClickOutside);
+//   }, []);
+
+//   const closeWithAnimation = () => {
+//     setVisible(false);
+//     setTimeout(() => onClose(), 300);
+//   };
+
+//   return (
+//     <div className="fixed inset-0 z-40 flex pt-[100px] sm:pt-20">
+//       <div className="fixed inset-0 bg-gray-800/50 backdrop-blur-sm" />
+
+//       <div
+//         ref={sidebarRef}
+//         className={`relative z-50 h-full w-64 bg-white shadow-lg overflow-y-auto transform transition-transform duration-300 ease-in-out ${
+//           visible ? "translate-x-0" : "-translate-x-full"
+//         }`}
+//       >
+//         {/* Close Button */}
+//         <button
+//           className="text-[#060606] font-bold mb-4 pl-56 pt-2 hover:scale-110 transition-transform duration-300"
+//           onClick={closeWithAnimation}
+//         >
+//           ✖
+//         </button>
+
+//         {/* Nav Items */}
+//         <div className="flex flex-col gap-7 px-4">
+//           <NavItem icon={<IoHomeOutline />} text="Home" path="/home" />
+
+//           <ExpandableNavItem
+//             icon={<RiMotorbikeLine />}
+//             title="New Bikes"
+//             itemKey="NewBikes"
+//             isOpen={expandedItem === "NewBikes"}
+//             toggle={() => toggleItem("NewBikes")}
+//             options={["Find New Bikes", "Upcoming Bikes", "Locate Showrooms", "Check On-Road Price"]}
+//           />
+
+//           <ExpandableNavItem
+//             icon={<GiScooter />}
+//             title="New Scooters"
+//             itemKey="NewScooters"
+//             isOpen={expandedItem === "NewScooters"}
+//             toggle={() => toggleItem("NewScooters")}
+//             options={["Find New Scooters", "Upcoming Scooters", "Best Scooters"]}
+//           />
+
+//           <NavItem icon={<GiElectric />} text="Electric Bikes" />
+//           <NavItem icon={<GrCompare />} text="Compare Bikes" path="/home/compare" /> {/* ✅ Routing added */}
+//           <NavItem icon={<GiWallet />} text="Bike Loan" />
+//           <NavItem icon={<MdBikeScooter />} text="Used Bikes" />
+
+//           <ExpandableNavItem
+//             icon={<MdOutlineSell />}
+//             title="Sell Bikes"
+//             itemKey="SellBikes"
+//             isOpen={expandedItem === "SellBikes"}
+//             toggle={() => toggleItem("SellBikes")}
+//             options={["Sell Now", "Get Quote", "How It Works"]}
+//           />
+
+//           <NavItem icon={<MdOutlineReviews />} text="Reviews" />
+//           <NavItem icon={<TbNews />} text="News, Videos" />
+//           <NavItem icon={<SlCalculator />} text="EMI Calculator" />
+//           <NavItem icon={<CgProfile />} text="Profile" />
+//         </div>
+
+//         {/* Footer App Links */}
+//         <div className="w-full bg-[#F9F9F9] mt-4 py-4">
+//           <h1 className="text-[#514e4e] ps-4 pb-3">Download Mobile App</h1>
+//           <div className="w-[100px] flex gap-3 ps-4">
+//             <img src="/app-store.svg" alt="App Store" />
+//             <img src="/play-store.svg" alt="Play Store" />
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// // ✅ Nav Item (with navigation)
+// const NavItem = ({ icon, text, path }) => {
+//   const router = useRouter();
+
+//   const handleClick = () => {
+//     if (path) router.push(path);
+//   };
+
+//   return (
+//     <div
+//       onClick={handleClick}
+//       className="flex items-center gap-4 text-black font-semibold cursor-pointer hover:text-green-700 transition"
+//     >
+//       <div className="text-xl font-light">{icon}</div>
+//       <span>{text}</span>
+//     </div>
+//   );
+// };
+
+// // ✅ Expandable Item
+// const ExpandableNavItem = ({ icon, title, itemKey, isOpen, toggle, options }) => {
+//   const router = useRouter();
+
+//   const handleClick = (option) => {
+//     if (option === "Find New Bikes") {
+//       router.push("/home/newbikes2");
+//     } else if (option === "Check On-Road Price") {
+//       router.push("/home/OnroadPrice");
+//     } else if (option === "Upcoming Bikes") {
+//       router.push("/home/Upcoming");
+//     } else if (option === "Locate Showrooms") {
+//       router.push("/home/Showrooms");
+//     }
+//   };
+
+//   return (
+//     <div className="flex flex-col">
+//       <button
+//         onClick={toggle}
+//         className="flex justify-between items-center text-black font-semibold gap-4 hover:text-green-700 transition"
+//       >
+//         <div className="flex items-center gap-4">
+//           <div className="text-xl">{icon}</div>
+//           <span>{title}</span>
+//         </div>
+//         {isOpen ? <AiOutlineUp /> : <AiOutlineDown />}
+//       </button>
+//       <div
+//         className={`ml-8 overflow-hidden transition-all duration-300 ease-in-out ${
+//           isOpen ? "max-h-40 opacity-100 mt-2" : "max-h-0 opacity-0"
+//         }`}
+//       >
+//         {options.map((option, idx) => (
+//           <div
+//             key={idx}
+//             onClick={() => handleClick(option)}
+//             className="text-sm text-gray-600 hover:text-black py-1 cursor-pointer"
+//           >
+//             {option}
+//           </div>
+//         ))}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Sidebar;
 
 
 
@@ -22,6 +203,7 @@ const Sidebar = ({ onClose }) => {
   const sidebarRef = useRef();
   const [expandedItem, setExpandedItem] = useState(null);
   const [visible, setVisible] = useState(false);
+  const router = useRouter();
 
   const toggleItem = (itemName) => {
     setExpandedItem(expandedItem === itemName ? null : itemName);
@@ -64,7 +246,7 @@ const Sidebar = ({ onClose }) => {
 
         {/* Nav Items */}
         <div className="flex flex-col gap-7 px-4">
-          <NavItem icon={<IoHomeOutline />} text="Home" path="/home" />
+          <NavItem icon={<IoHomeOutline />} text="Home" path="/home" closeSidebar={closeWithAnimation} />
 
           <ExpandableNavItem
             icon={<RiMotorbikeLine />}
@@ -72,7 +254,8 @@ const Sidebar = ({ onClose }) => {
             itemKey="NewBikes"
             isOpen={expandedItem === "NewBikes"}
             toggle={() => toggleItem("NewBikes")}
-            options={["Find New Bikes", "Upcoming Bikes", "Locate Showrooms","Check On-Road Price"]}
+            options={["Find New Bikes", "Upcoming Bikes", "Locate Showrooms", "Check On-Road Price"]}
+            closeSidebar={closeWithAnimation}
           />
 
           <ExpandableNavItem
@@ -82,12 +265,13 @@ const Sidebar = ({ onClose }) => {
             isOpen={expandedItem === "NewScooters"}
             toggle={() => toggleItem("NewScooters")}
             options={["Find New Scooters", "Upcoming Scooters", "Best Scooters"]}
+            closeSidebar={closeWithAnimation}
           />
 
-          <NavItem icon={<GiElectric />} text="Electric Bikes" />
-          <NavItem icon={<GrCompare />} text="Compare Bikes" />
-          <NavItem icon={<GiWallet />} text="Bike Loan" />
-          <NavItem icon={<MdBikeScooter />} text="Used Bikes" />
+          <NavItem icon={<GiElectric />} text="Electric Bikes" path="/home/electric" closeSidebar={closeWithAnimation} />
+          <NavItem icon={<GrCompare />} text="Compare Bikes" path="/home/compare" closeSidebar={closeWithAnimation} />
+          <NavItem icon={<GiWallet />} text="Bike Loan" path="/home/loan" closeSidebar={closeWithAnimation} />
+          <NavItem icon={<MdBikeScooter />} text="Used Bikes" path="/home/used" closeSidebar={closeWithAnimation} />
 
           <ExpandableNavItem
             icon={<MdOutlineSell />}
@@ -96,12 +280,13 @@ const Sidebar = ({ onClose }) => {
             isOpen={expandedItem === "SellBikes"}
             toggle={() => toggleItem("SellBikes")}
             options={["Sell Now", "Get Quote", "How It Works"]}
+            closeSidebar={closeWithAnimation}
           />
 
-          <NavItem icon={<MdOutlineReviews />} text="Reviews" />
-          <NavItem icon={<TbNews />} text="News, Videos" />
-          <NavItem icon={<SlCalculator />} text="EMI Calculator" />
-          <NavItem icon={<CgProfile />} text="Profile" />
+          <NavItem icon={<MdOutlineReviews />} text="Reviews" path="/home/reviews" closeSidebar={closeWithAnimation} />
+          <NavItem icon={<TbNews />} text="News, Videos" path="/home/news" closeSidebar={closeWithAnimation} />
+          <NavItem icon={<SlCalculator />} text="EMI Calculator" path="/home/emi" closeSidebar={closeWithAnimation} />
+          <NavItem icon={<CgProfile />} text="Profile" path="/home/profile" closeSidebar={closeWithAnimation} />
         </div>
 
         {/* Footer App Links */}
@@ -117,12 +302,15 @@ const Sidebar = ({ onClose }) => {
   );
 };
 
-// ✅ Nav Item (with navigation)
-const NavItem = ({ icon, text, path }) => {
+// ✅ Nav Item
+const NavItem = ({ icon, text, path, closeSidebar }) => {
   const router = useRouter();
 
   const handleClick = () => {
-    if (path) router.push(path);
+    if (path) {
+      router.push(path);
+      closeSidebar();
+    }
   };
 
   return (
@@ -137,25 +325,29 @@ const NavItem = ({ icon, text, path }) => {
 };
 
 // ✅ Expandable Item
-const ExpandableNavItem = ({ icon, title, itemKey, isOpen, toggle, options }) => {
+const ExpandableNavItem = ({ icon, title, itemKey, isOpen, toggle, options, closeSidebar }) => {
   const router = useRouter();
 
   const handleClick = (option) => {
-    if (option === "Find New Bikes") {
-      router.push("/home/newbikes2");
+    const routes = {
+      "Find New Bikes": "/home/newbikes2",
+      "Upcoming Bikes": "/home/Upcoming",
+      "Locate Showrooms": "/home/Showrooms",
+      "Check On-Road Price": "/home/OnroadPrice",
+      "Find New Scooters": "/home/newscooters",
+      "Upcoming Scooters": "/home/upcoming-scooters",
+      "Best Scooters": "/home/best-scooters",
+      "Sell Now": "/home/sell",
+      "Get Quote": "/home/sell/quote",
+      "How It Works": "/home/sell/how"
+    };
+
+    const route = routes[option];
+    if (route) {
+      router.push(route);
+      closeSidebar();
     }
-    if (option === "Check On-Road Price"){
-      router.push("/home/OnroadPrice")
-    }
-     if (option === "Upcoming Bikes"){
-      router.push("/home/Upcoming")
-    }
-     if (option === "Locate Showrooms"){
-      router.push("/home/Showrooms")
-    }
-    // Add more routes if needed
   };
-  
 
   return (
     <div className="flex flex-col">

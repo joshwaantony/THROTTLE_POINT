@@ -24,21 +24,21 @@ function Page() {
         <div className="w-full text-black flex justify-center items-center flex-col border-1 rounded-l-2xl border-gray-200 relative">
           <img src="/selectbike.svg" className=" size-[50px] sm:size-[72px]" alt="Select Bike" />
           <h1 className="text-[8px] sm:text-[15px] text-[#0979B6] sm:px-4">Select Bike</h1>
-          <div className="size-6 -right-3 border-1 rounded-full border-[#002B51] text-[#E03013] bg-white z-50 text-xs flex justify-center items-center absolute">VS</div>
+          <div className="size-6 -right-3 border-1 rounded-full border-[#002B51] text-[#E03013] bg-white  text-xs flex justify-center items-center absolute">VS</div>
         </div>
 
         {/* Bike Card 2 */}
         <div className="w-full text-black flex justify-center items-center flex-col border-1 border-gray-200 relative">
           <img src="/selectbike.svg" className=" size-[50px] sm:size-[72px]" alt="Select Bike" />
           <h1 className="text-[8px] sm:text-[15px] text-[#0979B6] sm:px-4">Select Bike</h1>
-          <div className="size-6 -right-3 border-1 rounded-full border-[#002B51] text-[#E03013] bg-white z-50 text-xs flex justify-center items-center absolute">VS</div>
+          <div className="size-6 -right-3 border-1 rounded-full border-[#002B51] text-[#E03013] bg-white  text-xs flex justify-center items-center absolute">VS</div>
         </div>
 
         {/* Bike Card 3 */}
         <div className="w-full text-black flex justify-center items-center flex-col border-1 border-gray-200 relative">
           <img src="/selectbike.svg" className=" size-[50px] sm:size-[72px]"  alt="Select Bike" />
           <h1 className="text-[8px] sm:text-[15px] text-[#0979B6] sm:px-4">Select Bike</h1>
-          <div className="size-6 -right-3 border-1 rounded-full border-[#002B51] text-[#E03013] bg-white z-50 text-xs flex justify-center items-center absolute">VS</div>
+          <div className="size-6 -right-3 border-1 rounded-full border-[#002B51] text-[#E03013] bg-white  text-xs flex justify-center items-center absolute">VS</div>
         </div>
 
         {/* Bike Card 4 */}
