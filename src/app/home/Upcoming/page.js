@@ -48,7 +48,7 @@ function page() {
               LAUNCH YEAR
             </h1>
             <div className=" border rounded-lg  w-[120px] sm:w-[200px] h-[34px] sm:h-[50px] flex justify-between px-2 items-center mt-2 ">
-            <button className=" text-black  text-[10px]sm:text-[15px]  ">
+            <button className=" text-black  text-[10px] sm:text-[15px]  ">
                 All years
             </button>
               <FaChevronRight />
