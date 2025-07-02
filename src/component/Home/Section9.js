@@ -107,14 +107,14 @@ function Section9() {
         {[...Array(6)].map((_, index) => (
           <div
             key={index}
-            className="flex min-w-[300px] border border-gray-300 rounded-xl py-2 gap-4 bg-white"
+            className="flex flex-col sm:flex-row min-w-[250px] sm:min-w-[300px] border border-gray-300 rounded-xl py-2 gap-4 bg-white"
           >
             <img
-              className="w-[120px] h-[80px] object-contain"
+              className="sm:w-[120px] sm:h-[80px] object-contain"
               src="/NS200.png"
               alt="bike"
             />
-            <div>
+            <div className="ps-15 sm:ps-0" >
               <h1 className="font-semibold text-black text-sm sm:text-lg">KTM 200</h1>
               <p className="text-sm text-black font-bold">
                 5 models available
