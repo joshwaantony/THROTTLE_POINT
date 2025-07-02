@@ -1,6 +1,8 @@
 "use client";
 import React, { useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+
 
 function BikeOne() {
   const scrollRef = useRef(null);
@@ -98,6 +100,9 @@ function BikeOne() {
       >
         <FaChevronRight className="text-gray-700" />
       </button>
+       <button className="text-[#0979b6] font-semibold flex items-center mt-4">
+              All New Launches <MdOutlineKeyboardArrowRight className="text-2xl" />
+            </button>
     </div>
   );
 }
