@@ -8,11 +8,11 @@ import React from "react";
 
 function page() {
   return (
-    <div className="px-8 md:px-20 2xl:px-40 py-4 mt-10">
-      <h1 className="text-black text-base md:text-3xl font-semibold">
+    <div className="px-8 md:px-20 2xl:px-40 py-4 mt-8">
+      <h1 className="text-black text-base sm:text-2xl font-semibold ">
         New Bikes in India
       </h1>
-      <p className="text-black">
+      <p className="text-black mt-4">
         Finding the right bike can be a complicated process for most of us.
         BikeWale helps you in making this process easier. You can search bikes
         based on brands, body styles, price, and displacement. Explore all the
