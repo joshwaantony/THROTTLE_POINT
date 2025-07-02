@@ -12,7 +12,7 @@ function Page() {
     <div className="px-8 md:px-20 2xl:px-40">
       {/* Heading Section */}
       <div>
-        <h1 className="text-black text-base md:text-3xl font-semibold mt-5">Compare Bike</h1>
+        <h1 className="text-black font-bold text-base sm:text-2xl">Compare Bike</h1>
         <p className="text-black mt-2">
           Are you confused between multiple bikes to choose from? Not sure what features should you compare? Don&apos;t worry, bike comparison was never so easy. BikeWale brings you an amazing tool &apos;Compare Bikes&apos; for bike comparison based on prices, mileage, power, performance, and 100s of other features. Compare your favorite bikes to choose the one that suits your needs. Compare multiple bikes at once to find the best one.
         </p>
