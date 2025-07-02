@@ -45,7 +45,7 @@ function Moreabout() {
         <h1 className="text-black text-xl sm:text-2xl font-extrabold mb-4" >More About Upcoming Bikes</h1>
          <div
           
-           className="flex  gap-4  "
+           className="flex  gap-4 overflow-hidden overflow-x-scroll "
          >
            {bikes.map((bike) => (
              <div
