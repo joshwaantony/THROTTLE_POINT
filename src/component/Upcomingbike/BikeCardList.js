@@ -183,20 +183,20 @@ const BikeCardList = () => {
                 className="w-[133px] h-[75px]"
               />
               <div>
-                <h1 className="text-black font-bold">{bike.name}</h1>
-                <h2 className="text-black font-bold mt-2">{bike.price}</h2>
+                <h1 className="text-black text-[10px] sm:text-base font-bold">{bike.name}</h1>
+                <h2 className="text-black text-[10px] sm:text-base font-bold mt-2">{bike.price}</h2>
                 <h3 className="text-black text-[12px]">Estimated Price</h3>
-                <h4 className="text-black font-bold">{bike.launchDate}</h4>
-                <h5 className="text-[#6F6F6F]">Expected launch</h5>
-                <h6 className="text-[#6F6F6F] mt-2">
+                <h4 className="text-black text-[10px] sm:text-base font-bold">{bike.launchDate}</h4>
+                <h5 className="text-[#6F6F6F] text-[10px] sm:text-base">Expected launch</h5>
+                <h6 className="text-[#6F6F6F] text-[10px] sm:text-base mt-2">
                   Launch confidence:{" "}
-                  <span className="text-black font-bold">{bike.confidence}</span>
+                  <span className="text-black text-[10px] sm:text-base font-bold">{bike.confidence}</span>
                 </h6>
               </div>
             </div>
             <div className="bg-gray-300 h-[40px] mt-4 flex items-center gap-2 px-3">
               <FaWhatsapp className="text-[#0979B6]" />
-              <p className="text-[#0979B6] text-sm">Notify Me on Launch</p>
+              <p className="text-[#0979B6] text-[10px] sm:text-base text-sm">Notify Me on Launch</p>
             </div>
           </div>
         ))}
@@ -207,7 +207,7 @@ const BikeCardList = () => {
         <button
           onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
           disabled={currentPage === 1}
-          className={`px-3 py-1 rounded ${
+          className={`text-[10px] sm:text-base px-3 py-1 rounded ${
             currentPage === 1 ? "bg-gray-200 text-gray-400" : "bg-[#E03013] text-white"
           }`}
         >
@@ -218,7 +218,7 @@ const BikeCardList = () => {
           <button
             key={page}
             onClick={() => setCurrentPage(page)}
-            className={`px-3 py-1 rounded ${
+            className={` text-[10px] sm:text-base px-3 py-1 rounded ${
               currentPage === page ? "bg-[#E03013] text-white" : "bg-gray-200 text-black"
             }`}
           >
@@ -229,7 +229,7 @@ const BikeCardList = () => {
         <button
           onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
           disabled={currentPage === totalPages}
-          className={`px-3 py-1 rounded ${
+          className={` text-[10px] sm:text-base px-3 py-1 rounded ${
             currentPage === totalPages ? "bg-gray-200 text-gray-400" : "bg-[#E03013] text-white"
           }`}
         >

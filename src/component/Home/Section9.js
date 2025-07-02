@@ -115,7 +115,7 @@ function Section9() {
               alt="bike"
             />
             <div>
-              <h1 className="font-semibold text-black text-lg">KTM 200</h1>
+              <h1 className="font-semibold text-black text-sm sm:text-lg">KTM 200</h1>
               <p className="text-sm text-black font-bold">
                 5 models available
               </p>

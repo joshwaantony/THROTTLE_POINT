@@ -19,7 +19,7 @@ function Moreabout() {
   {
     id: 2,
     image: "/1200.webp",
-    title: "Honda Hornet 2.0 Gets Cosmetic Upgrade",
+    title: "Honda Hornet 2.0 Gets Cosmetic ",
     author: "By Sneha Verma",
     time: "4 hours ago",
     description:
@@ -42,7 +42,7 @@ function Moreabout() {
   return (
     <div className=" my-6">
          
-        <h1 className="text-black text-2xl font-extrabold mb-4" >More About Upcoming Bikes</h1>
+        <h1 className="text-black text-xl sm:text-2xl font-extrabold mb-4" >More About Upcoming Bikes</h1>
          <div
           
            className="flex  gap-4  "

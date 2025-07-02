@@ -9,7 +9,7 @@ import React from "react";
 function page() {
   return (
     <div className="px-8 md:px-20 2xl:px-40 py-4 mt-8">
-      <h1 className="text-black text-base sm:text-2xl font-semibold ">
+      <h1 className="text-black font-bold text-base sm:text-2xl  ">
         New Bikes in India
       </h1>
       <p className="text-black mt-4">

@@ -19,7 +19,7 @@ function Section2() {
   {
     id: 2,
     image: "/1200.webp",
-    title: "Honda Hornet 2.0 Gets Cosmetic Upgrade",
+    title: "Honda Hornet 2.0 Gets Cosmetic ",
     author: "By Sneha Verma",
     time: "4 hours ago",
     description:
@@ -45,7 +45,7 @@ function Section2() {
         <h1 className="text-black text-base md:text-3xl font-semibold my-5 " >Bike Comparisons by Our Experts</h1>
          <div
           
-           className="flex  gap-4  "
+           className="flex  gap-4 overflow-hidden overflow-x-scroll  "
          >
            {bikes.map((bike) => (
              <div

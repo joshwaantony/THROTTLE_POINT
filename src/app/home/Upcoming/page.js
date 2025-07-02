@@ -8,7 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 function page() {
   return (
-    <div className="px-44">
+    <div className="px-8 md:px-20 2xl:px-40">
       <div className=" mt-10">
         <h1 className="text-black text-2xl font-extrabold  ">Upcoming Bikes</h1>
         <h2 className="text-black  font-bold text-xl mt-5">
@@ -35,8 +35,8 @@ function page() {
             <h1 className=" text-[12px] font-bold text-[#484848] mt-4">
               BRAND
             </h1>
-         <div className=" border rounded-lg w-[200px] h-[50px] flex justify-between px-2 items-center mt-2 ">
-            <button className=" text-black  text-[15px]  ">
+         <div className=" border rounded-lg w-[120px] sm:w-[200px] h-[34px] sm:h-[50px] flex justify-between px-2 items-center mt-2 ">
+            <button className=" text-black  text-[10px] sm:text-[15px]  ">
                 All Brands
             </button>
               <FaChevronRight />
@@ -47,8 +47,8 @@ function page() {
             <h1 className=" text-[12px] font-bold text-[#484848] mt-4">
               LAUNCH YEAR
             </h1>
-            <div className=" border rounded-lg w-[200px] h-[50px] flex justify-between px-2 items-center mt-2 ">
-            <button className=" text-black  text-[15px]  ">
+            <div className=" border rounded-lg  w-[120px] sm:w-[200px] h-[34px] sm:h-[50px] flex justify-between px-2 items-center mt-2 ">
+            <button className=" text-black  text-[10px]sm:text-[15px]  ">
                 All years
             </button>
               <FaChevronRight />
@@ -56,64 +56,17 @@ function page() {
           </div>
         </div>
       </div>
-    {/* <div className="flex justify-between gap-4">
-          <div className="border mt-4 w-full ">
-        <div className="flex mt-3 gap-4">
-            <div className="ps-2">
-                <img src="/f111.webp" alt="" className="w-[133px] h-[75px]" />
-            </div>
-            <div>
-                <h1 className="text-black font-bold">VIDA VX2</h1>
-                <h2 className="text-black font-bold mt-2">₹ 1,20,000 - ₹ 1,30,000</h2>
-                <h3 className="text-black text-[12px] ">Estimated Price</h3>
-                <h4 className="text-black font-bold">1st July 2025 </h4>
-                <h5 className="text-[#6F6F6F] ">Expected launch</h5>
-                <h6 className="text-[#6F6F6F] mt-2">Launch confidence: <span className="text-black font-bold">High</span></h6>
-
-            </div>
-        </div>
-        <div className="bg-gray-300 h-[40px] mt-3">
-<div className="flex gap-2 ps-3 items-center mt-3 ">
-<FaWhatsapp className="text-[#0979B6] mt-2"/>
-<p className="text-[#0979B6] mt-2">Notify Me on Launch</p>
-</div>
-        </div>
-      </div>
-
-
-        <div className="border mt-4 w-full ">
-        <div className="flex mt-3 gap-4">
-            <div className="ps-2">
-                <img src="/f111.webp" alt="" className="w-[133px] h-[75px]" />
-            </div>
-            <div>
-                <h1 className="text-black font-bold">VIDA VX2</h1>
-                <h2 className="text-black font-bold mt-2">₹ 1,20,000 - ₹ 1,30,000</h2>
-                <h3 className="text-black text-[12px] ">Estimated Price</h3>
-                <h4 className="text-black font-bold">1st July 2025 </h4>
-                <h5 className="text-[#6F6F6F] ">Expected launch</h5>
-                <h6 className="text-[#6F6F6F] mt-2">Launch confidence: <span className="text-black font-bold">High</span></h6>
-
-            </div>
-        </div>
-        <div className="bg-gray-300 h-[40px] mt-3">
-<div className="flex gap-2 ps-3 items-center mt-3 ">
-<FaWhatsapp className="text-[#0979B6] mt-2"/>
-<p className="text-[#0979B6] mt-2">Notify Me on Launch</p>
-</div>
-        </div>
-      </div>
-    </div> */}
+    
     
    <div className="mt-4">
     <BikeCardList/>
    </div>
    <div className="mt-20">
-    <h1 className="text-black text-2xl font-extrabold">New Bike Launches in India</h1>
+    <h1 className="text-black text-xl sm:text-2xl font-extrabold">New Bike Launches in India</h1>
     <BikeOne/>
    </div>
    <div className="mt-20">
-    <h1 className=" text-black text-2xl font-extrabold mb-4">Upcoming Bikes by Brands</h1>
+    <h1 className=" text-black text-xl sm:text-2xl font-extrabold mb-4">Upcoming Bikes by Brands</h1>
     <ComingBrand/>
    </div>
    <div>
