@@ -264,7 +264,7 @@ const Sidebar = ({ onClose }) => {
             itemKey="NewScooters"
             isOpen={expandedItem === "NewScooters"}
             toggle={() => toggleItem("NewScooters")}
-            options={["Find New Scooters", "Upcoming Scooters", "Best Scooters"]}
+            options={["Find New Scooters", "Electric Scooter", "Upcoming Scooters"]}
             closeSidebar={closeWithAnimation}
           />
 
