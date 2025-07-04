@@ -8,7 +8,7 @@ import React from "react";
 
 function page() {
   return (
-    <div className="px-8 md:px-20 2xl:px-40 py-4 mt-8">
+    <div className="px-6 md:px-12 lg:px-44">
       <h1 className="text-black font-bold text-base sm:text-2xl  ">
         New Bikes in India
       </h1>

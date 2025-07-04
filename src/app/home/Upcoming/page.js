@@ -8,7 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 function page() {
   return (
-    <div className="px-8 md:px-20 2xl:px-40">
+    <div className="px-6 md:px-12 lg:px-44">
       <div className=" mt-10">
         <h1 className="text-black text-2xl font-extrabold  ">Upcoming Bikes</h1>
         <h2 className="text-black  font-bold text-xl mt-5">
