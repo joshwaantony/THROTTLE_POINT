@@ -1,8 +1,3 @@
-
-
-
-
-
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
@@ -65,7 +60,12 @@ const Sidebar = ({ onClose }) => {
 
         {/* Nav Items */}
         <div className="flex flex-col gap-7 px-4">
-          <NavItem icon={<IoHomeOutline />} text="Home" path="/home" closeSidebar={closeWithAnimation} />
+          <NavItem
+            icon={<IoHomeOutline />}
+            text="Home"
+            path="/home"
+            closeSidebar={closeWithAnimation}
+          />
 
           <ExpandableNavItem
             icon={<RiMotorbikeLine />}
@@ -73,7 +73,12 @@ const Sidebar = ({ onClose }) => {
             itemKey="NewBikes"
             isOpen={expandedItem === "NewBikes"}
             toggle={() => toggleItem("NewBikes")}
-            options={["Find New Bikes", "Upcoming Bikes", "Locate Showrooms", "Check On-Road Price"]}
+            options={[
+              "Find New Bikes",
+              "Upcoming Bikes",
+              "Locate Showrooms",
+              "Check On-Road Price",
+            ]}
             closeSidebar={closeWithAnimation}
           />
 
@@ -83,14 +88,38 @@ const Sidebar = ({ onClose }) => {
             itemKey="NewScooters"
             isOpen={expandedItem === "NewScooters"}
             toggle={() => toggleItem("NewScooters")}
-            options={["Find New Scooters", "Electric Scooter", "Upcoming Scooters"]}
+            options={[
+              "Find New Scooters",
+              "Electric Scooter",
+              "Upcoming Scooters",
+            ]}
             closeSidebar={closeWithAnimation}
           />
 
-          <NavItem icon={<GiElectric />} text="Electric Bikes" path="/home/electric" closeSidebar={closeWithAnimation} />
-          <NavItem icon={<GrCompare />} text="Compare Bikes" path="/home/compare" closeSidebar={closeWithAnimation} />
-          <NavItem icon={<GiWallet />} text="Bike Loan" path="/home/loan" closeSidebar={closeWithAnimation} />
-          <NavItem icon={<MdBikeScooter />} text="Used Bikes" path="/home/used" closeSidebar={closeWithAnimation} />
+          <NavItem
+            icon={<GiElectric />}
+            text="Electric Bikes"
+            path="/home/electric"
+            closeSidebar={closeWithAnimation}
+          />
+          <NavItem
+            icon={<GrCompare />}
+            text="Compare Bikes"
+            path="/home/compare-bikes/compare"
+            closeSidebar={closeWithAnimation}
+          />
+          <NavItem
+            icon={<GiWallet />}
+            text="Bike Loan"
+            path="/home/loan"
+            closeSidebar={closeWithAnimation}
+          />
+          <NavItem
+            icon={<MdBikeScooter />}
+            text="Used Bikes"
+            path="/home/used"
+            closeSidebar={closeWithAnimation}
+          />
 
           <ExpandableNavItem
             icon={<MdOutlineSell />}
@@ -102,10 +131,30 @@ const Sidebar = ({ onClose }) => {
             closeSidebar={closeWithAnimation}
           />
 
-          <NavItem icon={<MdOutlineReviews />} text="Reviews" path="/home/reviews" closeSidebar={closeWithAnimation} />
-          <NavItem icon={<TbNews />} text="News, Videos" path="/home/news" closeSidebar={closeWithAnimation} />
-          <NavItem icon={<SlCalculator />} text="EMI Calculator" path="/home/emi" closeSidebar={closeWithAnimation} />
-          <NavItem icon={<CgProfile />} text="Profile" path="/home/profile" closeSidebar={closeWithAnimation} />
+          <NavItem
+            icon={<MdOutlineReviews />}
+            text="Reviews"
+            path="/home/reviews"
+            closeSidebar={closeWithAnimation}
+          />
+          <NavItem
+            icon={<TbNews />}
+            text="News, Videos"
+            path="/home/news"
+            closeSidebar={closeWithAnimation}
+          />
+          <NavItem
+            icon={<SlCalculator />}
+            text="EMI Calculator"
+            path="/home/emi"
+            closeSidebar={closeWithAnimation}
+          />
+          <NavItem
+            icon={<CgProfile />}
+            text="Profile"
+            path="/home/profile"
+            closeSidebar={closeWithAnimation}
+          />
         </div>
 
         {/* Footer App Links */}
@@ -144,21 +193,29 @@ const NavItem = ({ icon, text, path, closeSidebar }) => {
 };
 
 // ✅ Expandable Item
-const ExpandableNavItem = ({ icon, title, itemKey, isOpen, toggle, options, closeSidebar }) => {
+const ExpandableNavItem = ({
+  icon,
+  title,
+  itemKey,
+  isOpen,
+  toggle,
+  options,
+  closeSidebar,
+}) => {
   const router = useRouter();
 
   const handleClick = (option) => {
     const routes = {
-      "Find New Bikes": "/home/newbikes2",
-      "Upcoming Bikes": "/home/Upcoming",
-      "Locate Showrooms": "/home/Showrooms",
-      "Check On-Road Price": "/home/OnroadPrice",
-      "Find New Scooters": "/home/newscooters",
+      "Find New Bikes": "/home/new-bikes/newbikes2",
+      "Upcoming Bikes": "/home/new-bikes/Upcoming",
+      "Locate Showrooms": "/home/new-bikes/Showrooms",
+      "Check On-Road Price": "/home/new-bikes/OnroadPrice",
+      "Find New Scooters": "home/new-scooters/newscooter",
       "Upcoming Scooters": "/home/upcoming-scooters",
       "Best Scooters": "/home/best-scooters",
       "Sell Now": "/home/sell",
       "Get Quote": "/home/sell/quote",
-      "How It Works": "/home/sell/how"
+      "How It Works": "/home/sell/how",
     };
 
     const route = routes[option];
