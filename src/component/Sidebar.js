@@ -99,7 +99,7 @@ const Sidebar = ({ onClose }) => {
           <NavItem
             icon={<GiElectric />}
             text="Electric Bikes"
-            path="/home/electric"
+            path="/home/electric-bikes/electricpage"
             closeSidebar={closeWithAnimation}
           />
           <NavItem
@@ -111,7 +111,7 @@ const Sidebar = ({ onClose }) => {
           <NavItem
             icon={<GiWallet />}
             text="Bike Loan"
-            path="/home/loan"
+            path="/home/bike-loan/emi"
             closeSidebar={closeWithAnimation}
           />
           <NavItem
@@ -151,8 +151,8 @@ const Sidebar = ({ onClose }) => {
           />
           <NavItem
             icon={<CgProfile />}
-            text="Profile"
-            path="/home/profile"
+            text="Login"
+            path="/home/Login"
             closeSidebar={closeWithAnimation}
           />
         </div>
@@ -211,11 +211,12 @@ const ExpandableNavItem = ({
       "Locate Showrooms": "/home/new-bikes/Showrooms",
       "Check On-Road Price": "/home/new-bikes/OnroadPrice",
       "Find New Scooters": "home/new-scooters/newscooter",
-      "Upcoming Scooters": "/home/upcoming-scooters",
+      "Upcoming Scooters": "home/new-scooters/upcomingscooter",
       "Best Scooters": "/home/best-scooters",
       "Sell Now": "/home/sell",
       "Get Quote": "/home/sell/quote",
       "How It Works": "/home/sell/how",
+      "Electric Scooter": "home/new-scooters/electricScooter",
     };
 
     const route = routes[option];

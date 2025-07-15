@@ -99,7 +99,7 @@ const scooters = [
   },
 ];
 
-function ScooterCard() {
+function ElectricCard2() {
   return (
     <div className="px-6 md:px-12 lg:px-20 py-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -108,9 +108,12 @@ function ScooterCard() {
             <div className="flex gap-4">
               <img src={scooter.image} alt={scooter.name} className="w-[133px] h-[75px]" />
               <div>
-                <div className="flex items-center gap-2">
-                  <h1 className="text-black text-[10px] sm:text-base font-bold">{scooter.name}</h1>
+                <div className="flex  justify-between">
+             <div className="flex items-center  gap-2">
+                     <h1 className="text-black text-[10px] sm:text-base font-bold">{scooter.name}</h1>
                   <FaChevronRight className="text-black" />
+             </div>
+                  <img src="/electric_icon.png" alt="electric icon" className="size-10" />
                 </div>
                 <div className="flex items-center gap-4 mt-1">
                   <div className="flex items-center">
@@ -157,4 +160,4 @@ function ScooterCard() {
   );
 }
 
-export default ScooterCard;
+export default ElectricCard2;

@@ -1,7 +1,6 @@
 "use client";
-import CompareElectric from "@/component/ElectricScooters-s/CompareElectric";
-import ElectricCard from "@/component/ElectricScooters-s/ElectricCard";
-import CompareScooters from "@/component/new-scooters-s/CompareScooters";
+import CompareElectric2 from "@/component/ElectricBikes-s/CompareElectric2";
+import ElectricCard2 from "@/component/ElectricBikes-s/ElectricCard2";
 import React, { useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 
@@ -11,19 +10,21 @@ function Page() {
   return (
     <div className="px-6 md:px-12 lg:px-44">
       <h1 className="text-black text-2xl font-extrabold mt-12">
-        Electric Scooter
+        Electric Bike
       </h1>
       <p className="text-black mt-6">
-        We have put together a complete list of the best electric scooters in
-        India to suit your requirements. Bajaj Chetak, VIDA VX2 and TVS iQube
-        are the 3 most popular Electric scooters at the moment. If interested,
-        you can also explore electric bikes. Currently, the best electric scooty
-        in India is BGauss BG RUV 350 based on our user reviews. The most
-        affordable electric scooter in India is Gig by OLA which is priced at
-        Rs. 39,999. The electric scooty which has the highest speed in India
-        with a top speed of 125 kmph is Ultraviolette Tesseract. If you are
-        looking for a scooter which has the least charging time, then you could
-        go for Okinawa Praise which has a charging time of 3 Hrs.
+        Planning to buy an electric bike or electric scooter? Well, we know that
+        fuel type is one of the most crucial things while buying a two wheeler
+        and with so many options available out there, it gets really difficult
+        to find a good option which suits your requirement. Hence, we have put
+        together a complete list of best electric bikes in India. These are all
+        practical runabouts whose performance isn't quite on par with their
+        fossil-fuel-powered counterparts, but they are ideal for someone with a
+        short commute or a run to the market. View the complete list of electric
+        bike with information regarding price, images, colours, reviews, driving
+        range, charging time, other specifications and features and much more
+        for each of these EVs so that you get to choose the best electric bike
+        of your choice.
       </p>
 
       {!showTable && (
@@ -43,7 +44,7 @@ function Page() {
         }`}
       >
         <h1 className="text-black text-2xl font-extrabold">
-          Best Electric Scooter Price in India 2025
+        Best Electric Bikes Price in India 2025
         </h1>
         <div className="p-4">
           <div className="rounded-xl border border-gray-400 overflow-hidden">
@@ -86,20 +87,18 @@ function Page() {
         </div>
       </div>
       <div>
-        <h1 className="text-2xl font-bold text-black mb-6">
-         Electric Scooty
-        </h1>
+        <h1 className="text-2xl font-bold text-black mb-6">Electric Bikes</h1>
 
-        <ElectricCard/>
+      <ElectricCard2/>
         <div className="flex items-center gap-2 font-bold text-[#0979B6] cursor-pointer">
           <button>Load More</button>
           <FaChevronRight />
         </div>
         <h1 className="text-2xl font-bold text-black mt-6">
-      Compare Electric Scooters
+          Compare Electric Bikes
         </h1>
         <div className="mb-20">
-         <CompareElectric/>
+          <CompareElectric2 />
         </div>
       </div>
     </div>
