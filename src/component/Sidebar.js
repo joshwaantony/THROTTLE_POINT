@@ -117,7 +117,7 @@ const Sidebar = ({ onClose }) => {
           <NavItem
             icon={<MdBikeScooter />}
             text="Used Bikes"
-            path="/home/used"
+            path="/home/used-bike/used"
             closeSidebar={closeWithAnimation}
           />
 
@@ -151,7 +151,7 @@ const Sidebar = ({ onClose }) => {
           />
           <NavItem
             icon={<CgProfile />}
-            text="Login"
+            text="Profile"
             path="/home/Login"
             closeSidebar={closeWithAnimation}
           />
