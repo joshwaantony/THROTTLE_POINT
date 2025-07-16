@@ -73,12 +73,7 @@ function page() {
         </h1>
         <NewScooter/>
       </div>
-      {/* <div className="mt-20">
-        <h1 className=" text-black text-xl sm:text-2xl font-extrabold mb-4">
-          Upcoming Bikes by Brands
-        </h1>
-        <ComingBrand />
-      </div> */}
+   
       <div>
         <Moreabout />
       </div>

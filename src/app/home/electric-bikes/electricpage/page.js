@@ -13,18 +13,18 @@ function Page() {
         Electric Bike
       </h1>
       <p className="text-black mt-6">
-        Planning to buy an electric bike or electric scooter? Well, we know that
-        fuel type is one of the most crucial things while buying a two wheeler
-        and with so many options available out there, it gets really difficult
-        to find a good option which suits your requirement. Hence, we have put
-        together a complete list of best electric bikes in India. These are all
-        practical runabouts whose performance isn't quite on par with their
-        fossil-fuel-powered counterparts, but they are ideal for someone with a
-        short commute or a run to the market. View the complete list of electric
-        bike with information regarding price, images, colours, reviews, driving
-        range, charging time, other specifications and features and much more
-        for each of these EVs so that you get to choose the best electric bike
-        of your choice.
+    Planning to buy an electric bike or electric scooter? Well, we know that
+  fuel type is one of the most crucial things while buying a two wheeler
+  and with so many options available out there, it gets really difficult
+  to find a good option which suits your requirement. Hence, we have put
+  together a complete list of best electric bikes in India. These are all
+  practical runabouts whose performance isn&apos;t quite on par with their
+  fossil-fuel-powered counterparts, but they are ideal for someone with a
+  short commute or a run to the market. View the complete list of electric
+  bike with information regarding price, images, colours, reviews, driving
+  range, charging time, other specifications and features and much more
+  for each of these EVs so that you get to choose the best electric bike
+  of your choice.
       </p>
 
       {!showTable && (

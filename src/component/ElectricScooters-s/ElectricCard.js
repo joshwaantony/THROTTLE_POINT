@@ -1,7 +1,4 @@
 
-
-
-
 import React from "react";
 import { FaChevronRight } from "react-icons/fa6";
 import { IoMdStar } from "react-icons/io";
@@ -101,54 +98,66 @@ const scooters = [
 
 function ElectricCard() {
   return (
-    <div className="px-6 md:px-12 lg:px-20 py-8">
+    <div className="px-4 md:px-12 lg:px-20 py-8 w-full max-w-[1200px] mx-auto">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         {scooters.map((scooter, index) => (
-          <div key={index} className="border bg-white rounded shadow p-3 w-full">
-            <div className="flex gap-4">
-              <img src={scooter.image} alt={scooter.name} className="w-[133px] h-[75px]" />
-              <div>
-                <div className="flex  justify-between">
-             <div className="flex items-center  gap-2">
-                     <h1 className="text-black text-[10px] sm:text-base font-bold">{scooter.name}</h1>
-                  <FaChevronRight className="text-black" />
-             </div>
-                  <img src="/electric_icon.png" alt="electric icon" className="size-10" />
-                </div>
-                <div className="flex items-center gap-4 mt-1">
-                  <div className="flex items-center">
-                    <IoMdStar className="text-xl text-[#00857A]" />
-                    <h1 className="font-bold text-[#6F6F6F] text-[10px]">
-                      <span className="text-[#00857A] text-[15px] font-bold">
-                        {scooter.rating}
-                      </span>
-                      /5
-                    </h1>
-                  </div>
+          <div
+            key={index}
+            className="border bg-white rounded-xl shadow p-4 w-full"
+          >
+            <div className="flex flex-col sm:flex-row gap-4">
+              <img
+                src={scooter.image}
+                alt={scooter.name}
+                className="w-full sm:w-[130px] h-[80px] object-contain"
+              />
+              <div className="flex-1">
+                <div className="flex justify-between items-center">
                   <div className="flex items-center gap-2">
-                    <h1 className="text-[#6F6F6F] text-[10px]">{scooter.reviews}</h1>
-                    <h2 className="text-[#6F6F6F] text-[10px]"> Ratings</h2>
+                    <h1 className="text-black text-sm font-semibold">
+                      {scooter.name}
+                    </h1>
+                    <FaChevronRight className="text-black text-xs" />
                   </div>
+                  <img
+                    src="/electric_icon.png"
+                    alt="electric icon"
+                    className="w-6 h-6 sm:w-8 sm:h-8"
+                  />
                 </div>
-                <div className="flex gap-2 text-black text-[14px] mt-2 flex-wrap">
+
+                <div className="flex items-center gap-4 mt-1">
+                  <div className="flex items-center text-xs">
+                    <IoMdStar className="text-[#00857A] text-lg" />
+                    <span className="text-[#00857A] font-bold ml-1">
+                      {scooter.rating}
+                    </span>
+                    <span className="text-[#6F6F6F] ml-1">/5</span>
+                  </div>
+                  <p className="text-[#6F6F6F] text-xs">
+                    {scooter.reviews} Ratings
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap gap-x-2 gap-y-1 text-[12px] text-gray-800 mt-2">
                   {scooter.specs.map((spec, i) => (
-                    <p
+                    <span
                       key={i}
-                      className={`px-1 ${i !== 0 && " border-[#F9F9F9]"} ${
-                        i !== scooter.specs.length - 1 && "border-r border-[#dad6d6] pe-2"
-                      }`}
+                      className="border-r border-[#dad6d6] pr-2 last:border-none"
                     >
                       {spec}
-                    </p>
+                    </span>
                   ))}
                 </div>
-                <h2 className="text-black text-[10px] sm:text-base font-bold mt-2">
+
+                <h2 className="text-black font-semibold mt-2 text-sm">
                   {scooter.price}
                 </h2>
-                <h5 className="text-[#6F6F6F] text-[10px] sm:text-base mt-1">
+                <p className="text-[#6F6F6F] text-xs mt-1">
                   On-Road Price, {scooter.location}
-                </h5>
-                <button className="text-green-700 border border-green-700 font-bold rounded-xl p-2 w-[180px] text-xs mt-2">
+                </p>
+
+                <button className="mt-3 w-full sm:w-[180px] border border-green-700 text-green-700 font-semibold text-xs py-2 rounded-md hover:bg-green-50 transition">
                   View Price Breakup
                 </button>
               </div>
