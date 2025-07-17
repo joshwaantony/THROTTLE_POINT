@@ -127,7 +127,7 @@ const Sidebar = ({ onClose }) => {
             itemKey="SellBikes"
             isOpen={expandedItem === "SellBikes"}
             toggle={() => toggleItem("SellBikes")}
-            options={["Sell Now", "Get Quote", "How It Works"]}
+            options={["List Bike", "View My Listings",]}
             closeSidebar={closeWithAnimation}
           />
 
@@ -213,9 +213,9 @@ const ExpandableNavItem = ({
       "Find New Scooters": "home/new-scooters/newscooter",
       "Upcoming Scooters": "home/new-scooters/upcomingscooter",
       "Best Scooters": "/home/best-scooters",
-      "Sell Now": "/home/sell",
-      "Get Quote": "/home/sell/quote",
-      "How It Works": "/home/sell/how",
+      "List Bike": "/home/sell-bike/list-bike",
+      "View My Listings": "/home/sell/quote",
+     
       "Electric Scooter": "home/new-scooters/electricScooter",
     };
 
