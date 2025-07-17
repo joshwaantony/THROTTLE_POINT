@@ -8,7 +8,7 @@ export default function SellUsedBikeForm() {
     <div className="max-w-6xl mx-auto mt-10 p-4 md:p-6 grid grid-cols-1 md:grid-cols-3 gap-6">
       {/* Left Form Section */}
       <div className="md:col-span-2 space-y-6">
-        <h2 className="text-2xl md:text-xl font-semibold text-black">
+        <h2 className="text-2xl  md:text-xl font-bold text-black">
           Sell Your Used Bike 
         </h2>
 

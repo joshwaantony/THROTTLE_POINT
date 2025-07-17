@@ -134,7 +134,7 @@ const Sidebar = ({ onClose }) => {
           <NavItem
             icon={<MdOutlineReviews />}
             text="Reviews"
-            path="/home/reviews"
+            path="/home/review"
             closeSidebar={closeWithAnimation}
           />
           <NavItem
