@@ -214,7 +214,7 @@ const ExpandableNavItem = ({
       "Upcoming Scooters": "home/new-scooters/upcomingscooter",
       "Best Scooters": "/home/best-scooters",
       "List Bike": "/home/sell-bike/list-bike",
-      "View My Listings": "/home/sell/quote",
+      "View My Listings": "/home/sell-bike/view-my-listing",
      
       "Electric Scooter": "home/new-scooters/electricScooter",
     };

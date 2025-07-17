@@ -57,7 +57,7 @@ export default function SellUsedBikeForm() {
 
           <input
             type="text"
-            placeholder="Year of manufacturing*"
+            placeholder="Year of manufacturing"
             className="border border-gray-300 px-4 py-2 rounded placeholder:text-gray-500 "
           />
 
@@ -75,7 +75,7 @@ export default function SellUsedBikeForm() {
 
           <input
             type="number"
-            placeholder="Expected price*"
+            placeholder="Expected price"
             className="border text-gray-500  border-gray-300 px-4 py-2 rounded  placeholder:text-gray-500"
           />
 
