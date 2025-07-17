@@ -20,13 +20,13 @@ export default function SellUsedBikeForm() {
         </div>
 
         {/* Form */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
           <select
             className="border border-gray-300 px-4 py-2 rounded text-gray-500"
             defaultValue=""
           >
             <option value="" disabled>
-              Make
+           Brand
             </option>
             <option>Honda</option>
             <option>Yamaha</option>
@@ -61,9 +61,9 @@ export default function SellUsedBikeForm() {
           />
 
           <input
-            type="text"
-            placeholder="Kms ridden*"
-            className="border border-gray-300 px-4 py-2 rounded  placeholder:text-gray-500"
+            type="number"
+            placeholder="Kms ridden"
+            className="border text-gray-500 border-gray-300 px-4 py-2 rounded  placeholder:text-gray-500 "
           />
 
           <select className="border border-gray-300 px-4 py-2 rounded text-gray-500">
@@ -73,9 +73,9 @@ export default function SellUsedBikeForm() {
           </select>
 
           <input
-            type="text"
+            type="number"
             placeholder="Expected price*"
-            className="border border-gray-300 px-4 py-2 rounded  placeholder:text-gray-500"
+            className="border text-gray-500  border-gray-300 px-4 py-2 rounded  placeholder:text-gray-500"
           />
 
           <select className="border border-gray-300 px-4 py-2 rounded text-gray-500">
