@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function SellUsedBikeForm() {
   return (
@@ -26,7 +27,7 @@ export default function SellUsedBikeForm() {
             defaultValue=""
           >
             <option value="" disabled>
-           Brand
+              Brand
             </option>
             <option>Honda</option>
             <option>Yamaha</option>
@@ -121,7 +122,15 @@ export default function SellUsedBikeForm() {
         <div className="absolute inset-0  rounded-lg " />
         <div className="relative z-10 space-y-6 ">
           <div className="flex flex-col items-center justify-center space-y-2">
-            <img src="/logo.png" alt="Bike Icon" className="w-12 h-12   " />
+            {/* <img src="/logo.png" alt="Bike Icon" className="w-12 h-12   " /> */}
+            <Image
+              src="/logo.png"
+              alt="Bike Icon"
+              width={48}
+              height={48}
+              className="w-12 h-12"
+            />
+
             <span className="bg-white  text-black px-3 py-1 rounded-full text-sm font-bold">
               SELL WITH THROTTLE POINT
             </span>
@@ -148,7 +157,9 @@ export default function SellUsedBikeForm() {
               <span>📋</span>
               <div>
                 <strong>Unlimited listing duration</strong>
-                <p>Your bike ad will be visible until it's sold</p>
+                {/* <p>Your bike ad will be visible until it's sold</p> */}
+                <p>Your bike ad will be visible until it&apos;s sold</p>
+
               </div>
             </li>
             <li className="flex items-start gap-2">
@@ -163,17 +174,40 @@ export default function SellUsedBikeForm() {
       </div>
       {/* Buttons */}
 
-           <div className="flex items-center text-sm text-gray-600 space-x-1 ">
-  <Link href="/home" className="text-blue-600 hover:underline">Home</Link>
-  <svg className="w-3 h-3 text-gray-400 mx-1" fill="currentColor" viewBox="0 0 20 20">
-    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-  </svg>
-  <Link href="/home/used-bike/used" className="text-blue-600 hover:underline">Used Bikes</Link>
-  <svg className="w-3 h-3 text-gray-400 mx-1" fill="currentColor" viewBox="0 0 20 20">
-    <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-  </svg>
-  <span className="text-gray-600 font-medium">Sell Your Bike</span>
-</div>
+      <div className="flex items-center text-sm text-gray-600 space-x-1 ">
+        <Link href="/home" className="text-blue-600 hover:underline">
+          Home
+        </Link>
+        <svg
+          className="w-3 h-3 text-gray-400 mx-1"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            fillRule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clipRule="evenodd"
+          />
+        </svg>
+        <Link
+          href="/home/used-bike/used"
+          className="text-blue-600 hover:underline"
+        >
+          Used Bikes
+        </Link>
+        <svg
+          className="w-3 h-3 text-gray-400 mx-1"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            fillRule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clipRule="evenodd"
+          />
+        </svg>
+        <span className="text-gray-600 font-medium">Sell Your Bike</span>
+      </div>
     </div>
   );
 }
