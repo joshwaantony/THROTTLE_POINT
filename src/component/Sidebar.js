@@ -140,7 +140,7 @@ const Sidebar = ({ onClose }) => {
           <NavItem
             icon={<TbNews />}
             text="News, Videos"
-            path="/home/news"
+            path="/home/news-video/news"
             closeSidebar={closeWithAnimation}
           />
           <NavItem
