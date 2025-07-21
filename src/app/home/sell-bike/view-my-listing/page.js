@@ -8,8 +8,8 @@ function Page() {
   return (
     <div>
       <div
-        className="min-h-screen bg-cover bg-center flex items-center justify-center px-4 sm:px-6"
-        style={{ backgroundImage: "url('/my-listing.jpg')" }}
+       className="min-h-screen bg-cover bg-center flex items-center justify-center px-4 sm:px-6"
+  style={{ backgroundImage: "url('/my-listing.jpg')" }}
       >
         <div className="bg-white w-full max-w-md p-6 sm:p-8 rounded-md shadow-lg text-center">
           <h2 className="text-lg sm:text-xl font-semibold text-gray-800 mb-6">

@@ -47,7 +47,7 @@ const EmiCalculator = () => {
               type="number"
               value={loan}
               onChange={(e) => setLoan(e.target.value)}
-              className="w-full border border-gray-400 rounded px-3 py-2 mt-1"
+              className="w-full border border-gray-400 rounded px-3 py-2 mt-1 "
             />
           </div>
 

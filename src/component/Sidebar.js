@@ -152,7 +152,7 @@ const Sidebar = ({ onClose }) => {
           <NavItem
             icon={<CgProfile />}
             text="Profile"
-            path="/home/Login"
+            path="/home/profile"
             closeSidebar={closeWithAnimation}
           />
         </div>
