@@ -146,7 +146,7 @@ const Sidebar = ({ onClose }) => {
           <NavItem
             icon={<SlCalculator />}
             text="EMI Calculator"
-            path="/home/emi"
+            path="/home/emi-calculator"
             closeSidebar={closeWithAnimation}
           />
           <NavItem
