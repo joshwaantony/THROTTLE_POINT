@@ -1,41 +1,41 @@
+
+
+
+import FinalVideos from "@/component/newVideos-s/FinalVideos";
 import React from "react";
 import { IoSearchOutline } from "react-icons/io5";
 
-function page() {
-  return <div>
-      <div className="px-6 md:px-12 lg:px-44 ">
-      <div className="mt-12">
-        <h1 className="text-black text-2xl font-extrabold ">Bike News</h1>
-        <p className="text-black mt-3">
+function Page() {
+  return (
+    <div className="bg-white text-black px-4 sm:px-6 md:px-12 lg:px-36 xl:px-48 py-10 bg-amber-100">
+      {/* Heading Section */}
+      <div className="mb-8">
+        <h1 className="text-2xl sm:text-3xl font-extrabold mb-2">Bike News</h1>
+        <p className="text-sm sm:text-base text-gray-700">
           Read bike news of all models in India. All latest bikes have a number
-          of news about its launch, updates, specs, comparisons and more.
+          of news about their launch, updates, specs, comparisons and more.
         </p>
       </div>
 
-      <div className="mt-10">
-        
-        <div className="flex flex-wrap gap-6 -mt-4 mb-10 ">
-          <div>
-      
-            <div className="border border-gray-500 rounded-lg w-[300px] h-[50px] flex justify-between  gap-2 px-2 items-center">
-             
-               <IoSearchOutline className="text-black"/>
-                <input type="text"
-                placeholder="Type to select bike name " 
-                className="w-full outline-none  placeholder:text-gray-500 text-black" 
-                 />
-             
-             
+      {/* Search Bar Section */}
+      <div className="mt-6">
+        <div className="flex flex-col sm:flex-row items-center gap-4">
+          <div className="w-full sm:max-w-md">
+            <div className="flex items-center border border-gray-300 rounded-md px-3 py-2 bg-white shadow-sm">
+              <IoSearchOutline className="text-gray-600 text-lg mr-2" />
+              <input
+                type="text"
+                placeholder="Type to select bike name"
+                className="w-full bg-transparent outline-none placeholder:text-gray-500 text-sm sm:text-base"
+              />
             </div>
           </div>
-        
         </div>
       </div>
 
-
-
+     <FinalVideos/>
     </div>
-  </div>;
+  );
 }
 
-export default page;
+export default Page;
