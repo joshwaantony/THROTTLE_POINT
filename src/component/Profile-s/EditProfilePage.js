@@ -27,7 +27,7 @@ export default function EditProfilePage() {
   };
 
   return (
-    <div className="min-h-screen bg-cover bg-center  bg-no-repeat bg-[url('/editprofile.avif')] flex items-center justify-center px-4">
+    <div className="min-h-screen bg-cover bg-fixed bg-center  bg-no-repeat bg-[url('/editprofile.avif')] flex items-center justify-center px-4">
       <div className="w-full max-w-3xl bg-[#ffffffd2] backdrop-blur-md rounded-2xl shadow-2xl p-8">
         <div className="flex flex-col items-center">
           <div className="w-28 h-28 relative rounded-full overflow-hidden border-4 border-green-500 mb-4">
