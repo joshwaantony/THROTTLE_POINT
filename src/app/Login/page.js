@@ -21,29 +21,26 @@ function Page() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setError("");
+const handleLogin = async (e) => {
+  e.preventDefault();
 
-    const { Email, Password } = form;
+  try {
+    const payload = {
+      Username: username,
+      Password: password,
+    };
+    const res = await adminLogin(payload);
 
-    if (!Email || !Password) {
-      return setError("Please fill in all fields.");
+    if (res?.success) {
+      router.push("/admin/dashboard");
+    } else {
+      alert("Login failed: " + (res?.message || "Invalid credentials"));
     }
-
-    if (!isValidEmail(Email)) {
-      return setError("Please enter a valid email.");
-    }
-
-    try {
-      const res = await signIn({ Email, Password });
-      setAuth({ token: res.token, user: res.user });
-      router.push("/home");
-    } catch (err) {
-      const apiError = err?.response?.data;
-      setError(apiError?.message || apiError?.error || "Login failed");
-    }
-  };
+  } catch (error) {
+    console.error("Login error:", error);
+    alert("Login error. Please try again.");
+  }
+};
 
   return (
     <div
